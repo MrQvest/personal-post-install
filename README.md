@@ -2,7 +2,7 @@
 personal post installation script for Fedora
 
 ## How to execute 
-cd into personal-post-install
+change directory into personal-post-install
 ```
 cd personal-post-install
 ```
