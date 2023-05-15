@@ -2,9 +2,15 @@
 personal post installation script for Fedora
 
 ## How to execute 
+cd into personal-post-install
 ```
-chmod +x fedora-post-install.sh
-
-
+cd personal-post-install
+```
+change file permissions
+```
+chmod +x fedora-post-install.sh 
+```
+execute
+```
 ./fedora-post-install.sh
 ```
