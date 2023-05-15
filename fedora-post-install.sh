@@ -15,4 +15,4 @@ sudo dnf install gnome-tweaks easyeffects ffmpegthumbnailer steam-devices yaru-t
 sudo dnf remove firefox -y; 
 flatpak install -y --noninteractive flathub com.spotify.Client com.valvesoftware.Steam org.videolan.VLC io.github.shiftey.Desktop com.heroicgameslauncher.hgl org.prismlauncher.PrismLauncher com.unity.UnityHub org.keepassxc.KeePassXC com.visualstudio.code com.github.micahflee.torbrowser-launcher org.mozilla.firefox com.mattjakeman.ExtensionManager com.github.tchx84.Flatseal org.qbittorrent.qBittorrent io.github.spacingbat3.webcord org.mozilla.Thunderbird; 
 sudo dnf update -y && flatpak update -y --noninteractive;
-sudo dnf install akmod-nvidia;
+sudo dnf install akmod-nvidia -y;
