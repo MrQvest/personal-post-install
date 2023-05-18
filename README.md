@@ -2,7 +2,7 @@
 personal post installation script for Fedora
 
 ## How to execute
-git clone this repository
+clone this repository
 ```
 git clone https://github.com/MrQvest/personal-post-install.git
 ```
