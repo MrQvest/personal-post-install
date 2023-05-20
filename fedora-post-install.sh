@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Become root
-sudo su
-
 # Update the system
 sudo dnf update -y &&
 
@@ -38,9 +35,6 @@ sudo dnf install akmod-nvidia -y &&
 
 # More personal stuff
 sudo dnf remove firefox totem -y &&
-
-# Exit root
-exit
 
 # Install personal flatpak collection
 flatpak install -y --noninteractive flathub org.mozilla.firefox
