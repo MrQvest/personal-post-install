@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Become root
+sudo su
+
 # Update the system
 sudo dnf update -y &&
 
