@@ -37,4 +37,4 @@ sudo dnf install akmod-nvidia -y &&
 sudo dnf remove firefox totem -y &&
 
 # Install personal flatpak collection
-flatpak install -y --noninteractive flathub org.mozilla.firefox com.spotify.Client com.valvesoftware.Steam org.videolan.VLC io.github.shiftey.Desktop com.heroicgameslauncher.hgl org.prismlauncher.PrismLauncher com.unity.UnityHub org.keepassxc.KeePassXC com.visualstudio.code com.github.micahflee.torbrowser-launcher com.mattjakeman.ExtensionManager com.github.tchx84.Flatseal org.qbittorrent.qBittorrent io.github.spacingbat3.webcord org.mozilla.Thunderbird 
+flatpak install -y --noninteractive flathub org.mozilla.firefox com.spotify.Client com.valvesoftware.Steam org.videolan.VLC io.github.shiftey.Desktop com.heroicgameslauncher.hgl org.prismlauncher.PrismLauncher com.unity.UnityHub org.keepassxc.KeePassXC com.visualstudio.code com.github.micahflee.torbrowser-launcher com.mattjakeman.ExtensionManager com.github.tchx84.Flatseal org.qbittorrent.qBittorrent io.github.spacingbat3.webcord org.mozilla.Thunderbird org.freedesktop.Sdk.Extension.dotnet7 org.freedesktop.Sdk.Extension.dotnet6 org.freedesktop.Sdk.Extension.mono6 
