@@ -43,7 +43,30 @@ sudo dnf remove firefox totem -y &&
 exit
 
 # Install personal flatpak collection
-flatpak install -y --noninteractive flathub org.mozilla.firefox com.spotify.Client com.valvesoftware.Steam org.videolan.VLC io.github.shiftey.Desktop com.heroicgameslauncher.hgl org.prismlauncher.PrismLauncher com.unity.UnityHub org.keepassxc.KeePassXC com.visualstudio.code com.github.micahflee.torbrowser-launcher com.mattjakeman.ExtensionManager com.github.tchx84.Flatseal org.qbittorrent.qBittorrent io.github.spacingbat3.webcord org.mozilla.Thunderbird org.freedesktop.Sdk.Extension.dotnet7 org.freedesktop.Sdk.Extension.dotnet6 org.freedesktop.Sdk.Extension.mono6 
+flatpak install -y --noninteractive flathub org.mozilla.firefox
+flatpak install -y --noninteractive flathub com.spotify.Client 
+flatpak install -y --noninteractive flathub com.valvesoftware.Steam
+flatpak install -y --noninteractive flathub org.videolan.VLC
+flatpak install -y --noninteractive flathub io.github.shiftey.Desktop
+flatpak install -y --noninteractive flathub com.heroicgameslauncher.hgl
+flatpak install -y --noninteractive flathub org.prismlauncher.PrismLauncher
+flatpak install -y --noninteractive flathub com.unity.UnityHub
+flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
+flatpak install -y --noninteractive flathub com.visualstudio.code
+flatpak install -y --noninteractive flathub com.github.micahflee.torbrowser-launcher
+flatpak install -y --noninteractive flathub com.mattjakeman.ExtensionManager
+flatpak install -y --noninteractive flathub com.github.tchx84.Flatseal
+flatpak install -y --noninteractive flathub org.qbittorrent.qBittorrent
+flatpak install -y --noninteractive flathub io.github.spacingbat3.webcord
+flatpak install -y --noninteractive flathub org.mozilla.Thunderbird
+flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.dotnet7
+flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.dotnet6
+flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.mono6
+flatpak install -y --noninteractive flathub org.soundconverter.SoundConverter
+flatpak install -y --noninteractive flathub io.github.celluloid_player.Celluloid
+flatpak install -y --noninteractive flathub im.riot.Riot
+flatpak install -y --noninteractive flathub fr.handbrake.ghb
+flatpak install -y --noninteractive flathub org.godotengine.Godot
 
 # Enable flatpak SDK extensions
 FLATPAK_ENABLE_SDK_EXT=dotnet7,dotnet6,mono6
