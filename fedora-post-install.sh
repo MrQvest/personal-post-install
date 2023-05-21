@@ -34,7 +34,7 @@ sudo dnf install gnome-shell-extension-openweather gnome-shell-extension-caffein
 sudo dnf install akmod-nvidia -y &&
 
 # More personal stuff
-sudo dnf remove firefox totem rm gnome-extensions-app -y &&
+sudo dnf remove firefox totem gnome-extensions-app -y &&
 
 # Install personal flatpak collection
 flatpak install -y --noninteractive flathub org.mozilla.firefox
