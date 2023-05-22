@@ -28,7 +28,7 @@ sudo dnf install rpmfusion-nonfree-release-tainted -y &&
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y &&
 
 # Personal stuff
-sudo dnf install gnome-shell-extension-pop-shell gnome-shell-extension-openweather gnome-shell-extension-caffeine gnome-tweaks gnome-shell-extension-user-theme easyeffects ffmpegthumbnailer steam-devices yt-dlp gnome-shell-extension-appindicator gnome-shell-extension-dash-to-dock gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect -y &&
+sudo dnf install gnome-shell-extension-openweather gnome-shell-extension-caffeine gnome-tweaks gnome-shell-extension-user-theme easyeffects ffmpegthumbnailer steam-devices yt-dlp gnome-shell-extension-appindicator gnome-shell-extension-dash-to-dock gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect -y &&
 
 # NVIDIA Driver
 sudo dnf install akmod-nvidia -y &&
@@ -61,3 +61,4 @@ flatpak install -y --noninteractive flathub io.github.celluloid_player.Celluloid
 flatpak install -y --noninteractive flathub im.riot.Riot
 flatpak install -y --noninteractive flathub fr.handbrake.ghb
 flatpak install -y --noninteractive flathub org.godotengine.Godot
+flatpak install -y --noninteractive flathub org.gnome.World.PikaBackup
