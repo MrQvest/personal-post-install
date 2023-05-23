@@ -37,28 +37,54 @@ sudo dnf install akmod-nvidia -y &&
 sudo dnf remove firefox totem gnome-extensions-app -y &&
 
 # Install personal flatpak collection
+
+# backup
 flatpak install -y --noninteractive flathub org.gnome.World.PikaBackup
+# firefox
 flatpak install -y --noninteractive flathub org.mozilla.firefox
+# spotify
 flatpak install -y --noninteractive flathub com.spotify.Client 
+# steam
 flatpak install -y --noninteractive flathub com.valvesoftware.Steam
+# vlc
 flatpak install -y --noninteractive flathub org.videolan.VLC
+# github desktop
 flatpak install -y --noninteractive flathub io.github.shiftey.Desktop
+# heroic games launcher
 flatpak install -y --noninteractive flathub com.heroicgameslauncher.hgl
+# prism launcher
 flatpak install -y --noninteractive flathub org.prismlauncher.PrismLauncher
+# unity hub
 flatpak install -y --noninteractive flathub com.unity.UnityHub
+# keepassxc
 flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
+# vscode
 flatpak install -y --noninteractive flathub com.visualstudio.code
+# tor browser launcher
 flatpak install -y --noninteractive flathub com.github.micahflee.torbrowser-launcher
+# extension manager
 flatpak install -y --noninteractive flathub com.mattjakeman.ExtensionManager
+# flatseal
 flatpak install -y --noninteractive flathub com.github.tchx84.Flatseal
+# qbittorrent
 flatpak install -y --noninteractive flathub org.qbittorrent.qBittorrent
+# webcord
 flatpak install -y --noninteractive flathub io.github.spacingbat3.webcord
+# thunderbird
 flatpak install -y --noninteractive flathub org.mozilla.Thunderbird
+# SDK extensions
 flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.dotnet7
 flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.dotnet6
 flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.mono6
+# sound converter
 flatpak install -y --noninteractive flathub org.soundconverter.SoundConverter
-flatpak install -y --noninteractive flathub io.github.celluloid_player.Celluloid
+# element
 flatpak install -y --noninteractive flathub im.riot.Riot
+# handbrake
 flatpak install -y --noninteractive flathub fr.handbrake.ghb
+# godot game engine
 flatpak install -y --noninteractive flathub org.godotengine.Godot
+# blender
+flatpak install -y --noninteractive flathub org.blender.Blender
+# i2pd
+flatpak install -y --noninteractive flathub website.i2pd.i2pd
