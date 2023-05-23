@@ -28,7 +28,7 @@ sudo dnf install rpmfusion-nonfree-release-tainted -y &&
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y &&
 
 # Personal stuff
-sudo dnf install gnome-shell-extension-openweather gnome-shell-extension-caffeine gnome-tweaks gnome-shell-extension-user-theme easyeffects ffmpegthumbnailer steam-devices yt-dlp gnome-shell-extension-appindicator gnome-shell-extension-dash-to-dock gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect -y &&
+sudo dnf install gnome-shell-extension-openweather gnome-shell-extension-caffeine gnome-tweaks gnome-shell-extension-user-theme easyeffects ffmpegthumbnailer steam-devices yt-dlp gnome-shell-extension-appindicator gnome-shell-extension-dash-to-dock gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect papirus-icon-theme -y &&
 
 # NVIDIA Driver
 sudo dnf install akmod-nvidia -y &&
