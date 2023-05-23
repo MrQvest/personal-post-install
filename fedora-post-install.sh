@@ -37,6 +37,7 @@ sudo dnf install akmod-nvidia -y &&
 sudo dnf remove firefox totem gnome-extensions-app -y &&
 
 # Install personal flatpak collection
+flatpak install -y --noninteractive flathub org.gnome.World.PikaBackup
 flatpak install -y --noninteractive flathub org.mozilla.firefox
 flatpak install -y --noninteractive flathub com.spotify.Client 
 flatpak install -y --noninteractive flathub com.valvesoftware.Steam
@@ -61,4 +62,3 @@ flatpak install -y --noninteractive flathub io.github.celluloid_player.Celluloid
 flatpak install -y --noninteractive flathub im.riot.Riot
 flatpak install -y --noninteractive flathub fr.handbrake.ghb
 flatpak install -y --noninteractive flathub org.godotengine.Godot
-flatpak install -y --noninteractive flathub org.gnome.World.PikaBackup
