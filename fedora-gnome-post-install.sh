@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Update the system
-sudo dnf update -y &&
-
 # Install RPM Fusion repositories 
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y && 
 
@@ -34,14 +31,15 @@ sudo dnf install gnome-shell-extension-openweather gnome-shell-extension-caffein
 sudo dnf install akmod-nvidia -y &&
 
 # More personal stuff
-sudo dnf remove firefox totem gnome-extensions-app -y &&
+sudo dnf remove totem gnome-extensions-app -y &&
+
+# Update the system
+sudo dnf update -y &&
 
 # Install personal flatpak collection
 
 # backup
 flatpak install -y --noninteractive flathub org.gnome.World.PikaBackup
-# firefox
-flatpak install -y --noninteractive flathub org.mozilla.firefox
 # spotify
 flatpak install -y --noninteractive flathub com.spotify.Client 
 # steam
