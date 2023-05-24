@@ -72,6 +72,8 @@ flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.dotnet
 flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.mono6
 # sound converter
 flatpak install -y --noninteractive flathub org.soundconverter.SoundConverter
+# image converter
+flatpak install -y --noninteractive flathub io.gitlab.adhami3310.Converter
 # element
 flatpak install -y --noninteractive flathub im.riot.Riot
 # handbrake
