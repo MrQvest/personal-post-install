@@ -25,7 +25,7 @@ sudo dnf install rpmfusion-nonfree-release-tainted -y &&
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y &&
 
 # Personal stuff
-sudo dnf install gnome-shell-extension-openweather gnome-shell-extension-caffeine gnome-tweaks gnome-shell-extension-user-theme easyeffects ffmpegthumbnailer steam-devices yt-dlp gnome-shell-extension-appindicator gnome-shell-extension-dash-to-dock gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect papirus-icon-theme -y &&
+sudo dnf install gnome-shell-extension-openweather gnome-shell-extension-caffeine gnome-tweaks gnome-shell-extension-user-theme easyeffects ffmpegthumbnailer steam-devices yt-dlp gnome-shell-extension-appindicator gnome-shell-extension-dash-to-dock gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect keepassxc -y &&
 
 # NVIDIA Driver
 sudo dnf install akmod-nvidia -y &&
@@ -54,8 +54,6 @@ flatpak install -y --noninteractive flathub com.heroicgameslauncher.hgl
 flatpak install -y --noninteractive flathub org.prismlauncher.PrismLauncher
 # unity hub
 flatpak install -y --noninteractive flathub com.unity.UnityHub
-# keepassxc
-flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
 # vscode
 flatpak install -y --noninteractive flathub com.visualstudio.code
 # tor browser launcher
