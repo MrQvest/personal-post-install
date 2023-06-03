@@ -27,11 +27,11 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y &&
 # Personal stuff
 sudo dnf install gnome-shell-extension-openweather gnome-shell-extension-caffeine gnome-tweaks gnome-shell-extension-user-theme easyeffects ffmpegthumbnailer yt-dlp gnome-shell-extension-appindicator gnome-shell-extension-dash-to-dock gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect steam wine-mono -y &&
 
-# NVIDIA Driver
-sudo dnf install akmod-nvidia -y &&
-
 # More personal stuff
 sudo dnf remove totem gnome-extensions-app -y &&
+
+# NVIDIA Driver
+sudo dnf install akmod-nvidia -y &&
 
 # Update the system
 sudo dnf update -y &&
@@ -86,3 +86,5 @@ flatpak install -y --noninteractive flathub org.godotengine.Godot
 flatpak install -y --noninteractive flathub org.blender.Blender
 # i2pd
 #flatpak install -y --noninteractive flathub website.i2pd.i2pd
+# keepassxc
+flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
