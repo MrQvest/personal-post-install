@@ -31,7 +31,8 @@ sudo dnf install gnome-shell-extension-openweather gnome-shell-extension-caffein
 sudo dnf remove totem gnome-extensions-app -y 
 
 # NVIDIA Driver
-sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda -y
+sudo dnf install akmod-nvidia -y
+sudo dnf install xorg-x11-drv-nvidia-cuda -y
 
 # Update the system
 sudo dnf update -y
