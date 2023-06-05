@@ -1,40 +1,40 @@
 #!/bin/bash
 
 # Install RPM Fusion repositories 
-sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y && 
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y 
 
 # AppStream metadata
-sudo dnf groupupdate core -y &&
+sudo dnf groupupdate core -y
 
 # Multimedia stuff / codecs
-sudo dnf swap ffmpeg-free ffmpeg --allowerasing -y && 
-sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin -y &&
-sudo dnf groupupdate sound-and-video -y &&
+sudo dnf swap ffmpeg-free ffmpeg --allowerasing -y 
+sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin -y
+sudo dnf groupupdate sound-and-video -y
 
 # Install hardware accelerated codecs
-sudo dnf install intel-media-driver -y &&
-sudo dnf install libva-intel-driver -y &&
-sudo dnf install nvidia-vaapi-driver -y &&
+sudo dnf install intel-media-driver -y 
+sudo dnf install libva-intel-driver -y 
+sudo dnf install nvidia-vaapi-driver -y
 
 # DVD
-sudo dnf install rpmfusion-free-release-tainted -y &&
-sudo dnf install libdvdcss -y &&
+sudo dnf install rpmfusion-free-release-tainted -y
+sudo dnf install libdvdcss -y
 
 # Firmware
-sudo dnf install rpmfusion-nonfree-release-tainted -y &&
-sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y &&
+sudo dnf install rpmfusion-nonfree-release-tainted -y
+sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y 
 
 # Personal stuff
-sudo dnf install gnome-shell-extension-openweather gnome-shell-extension-caffeine gnome-tweaks gnome-shell-extension-user-theme easyeffects ffmpegthumbnailer yt-dlp gnome-shell-extension-appindicator gnome-shell-extension-dash-to-dock gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect steam wine-mono -y &&
+sudo dnf install gnome-shell-extension-openweather gnome-shell-extension-caffeine gnome-tweaks gnome-shell-extension-user-theme easyeffects ffmpegthumbnailer yt-dlp gnome-shell-extension-appindicator gnome-shell-extension-dash-to-dock gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect steam wine-mono discord -y 
 
 # More personal stuff
-sudo dnf remove totem gnome-extensions-app -y &&
+sudo dnf remove totem gnome-extensions-app -y 
 
 # NVIDIA Driver
-sudo dnf install akmod-nvidia -y &&
+sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda -y
 
 # Update the system
-sudo dnf update -y &&
+sudo dnf update -y
 
 # Install personal flatpak collection
 
