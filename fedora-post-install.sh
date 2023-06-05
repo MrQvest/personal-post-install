@@ -68,10 +68,6 @@ flatpak install -y --noninteractive flathub org.qbittorrent.qBittorrent
 #flatpak install -y --noninteractive flathub io.github.spacingbat3.webcord
 # thunderbird
 flatpak install -y --noninteractive flathub org.mozilla.Thunderbird
-# SDK extensions
-flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.dotnet7
-flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.dotnet6
-flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.mono6
 # sound converter
 flatpak install -y --noninteractive flathub org.soundconverter.SoundConverter
 # image converter
@@ -88,3 +84,7 @@ flatpak install -y --noninteractive flathub org.blender.Blender
 #flatpak install -y --noninteractive flathub website.i2pd.i2pd
 # keepassxc
 flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
+# SDK extensions
+flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.dotnet7
+flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.dotnet6
+flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.mono6
