@@ -25,7 +25,7 @@ sudo dnf install rpmfusion-nonfree-release-tainted -y
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y 
 
 # Personal stuff
-sudo dnf install gnome-shell-extension-openweather gnome-shell-extension-caffeine gnome-tweaks gnome-shell-extension-user-theme easyeffects ffmpegthumbnailer yt-dlp gnome-shell-extension-appindicator gnome-shell-extension-dash-to-dock gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect steam wine-mono discord -y 
+sudo dnf install gnome-tweaks ffmpegthumbnailer yt-dlp steam discord vlc -y 
 
 # More personal stuff
 sudo dnf remove totem gnome-extensions-app -y 
@@ -41,12 +41,14 @@ sudo dnf update -y
 
 # backup
 flatpak install -y --noninteractive flathub org.gnome.World.PikaBackup
+# easy effects
+flatpak install -y --non-interactive flathub com.github.wwmm.easyeffects
 # spotify
 flatpak install -y --noninteractive flathub com.spotify.Client 
 # steam
 #flatpak install -y --noninteractive flathub com.valvesoftware.Steam
 # vlc
-flatpak install -y --noninteractive flathub org.videolan.VLC
+#flatpak install -y --noninteractive flathub org.videolan.VLC
 # github desktop
 flatpak install -y --noninteractive flathub io.github.shiftey.Desktop
 # heroic games launcher
@@ -58,7 +60,7 @@ flatpak install -y --noninteractive flathub com.unity.UnityHub
 # vscode
 flatpak install -y --noninteractive flathub com.visualstudio.code
 # tor browser launcher
-flatpak install -y --noninteractive flathub com.github.micahflee.torbrowser-launcher
+#flatpak install -y --noninteractive flathub com.github.micahflee.torbrowser-launcher
 # extension manager
 flatpak install -y --noninteractive flathub com.mattjakeman.ExtensionManager
 # flatseal
@@ -68,13 +70,15 @@ flatpak install -y --noninteractive flathub org.qbittorrent.qBittorrent
 # webcord
 #flatpak install -y --noninteractive flathub io.github.spacingbat3.webcord
 # thunderbird
-flatpak install -y --noninteractive flathub org.mozilla.Thunderbird
+#flatpak install -y --noninteractive flathub org.mozilla.Thunderbird
+# evolution mail client
+flatpak install -y --noninteractive flathub org.gnome.Evolution
 # sound converter
 flatpak install -y --noninteractive flathub org.soundconverter.SoundConverter
 # image converter
 flatpak install -y --noninteractive flathub io.gitlab.adhami3310.Converter
 # element
-flatpak install -y --noninteractive flathub im.riot.Riot
+#flatpak install -y --noninteractive flathub im.riot.Riot
 # handbrake
 #flatpak install -y --noninteractive flathub fr.handbrake.ghb
 # godot game engine
