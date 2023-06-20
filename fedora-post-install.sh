@@ -25,8 +25,8 @@ sudo dnf install rpmfusion-nonfree-release-tainted -y
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y 
 
 # Personal stuff
-sudo dnf install gnome-tweaks ffmpegthumbnailer yt-dlp steam discord vlc -y
-sudo dnf remove totem gnome-extensions-app -y 
+sudo dnf install gnome-tweaks ffmpegthumbnailer yt-dlp steam discord vlc evolution -y
+sudo dnf remove totem gnome-extensions-app libreoffice-writer libreoffice-impress libreoffice-calc -y 
 
 # NVIDIA Driver
 sudo dnf install akmod-nvidia -y
@@ -40,13 +40,11 @@ sudo dnf update -y
 # backup
 flatpak install -y --noninteractive flathub org.gnome.World.PikaBackup
 # easy effects
-flatpak install -y --non-interactive flathub com.github.wwmm.easyeffects
+flatpak install -y --noninteractive flathub com.github.wwmm.easyeffects
+# libreoffice
+flatpak install -y --noninteractive flathub org.libreoffice.LibreOffice
 # spotify
 flatpak install -y --noninteractive flathub com.spotify.Client 
-# steam
-#flatpak install -y --noninteractive flathub com.valvesoftware.Steam
-# vlc
-#flatpak install -y --noninteractive flathub org.videolan.VLC
 # github desktop
 flatpak install -y --noninteractive flathub io.github.shiftey.Desktop
 # heroic games launcher
@@ -69,8 +67,6 @@ flatpak install -y --noninteractive flathub org.qbittorrent.qBittorrent
 #flatpak install -y --noninteractive flathub io.github.spacingbat3.webcord
 # thunderbird
 #flatpak install -y --noninteractive flathub org.mozilla.Thunderbird
-# evolution mail client
-flatpak install -y --noninteractive flathub org.gnome.Evolution
 # sound converter
 flatpak install -y --noninteractive flathub org.soundconverter.SoundConverter
 # image converter
