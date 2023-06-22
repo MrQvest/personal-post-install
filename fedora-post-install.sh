@@ -25,7 +25,7 @@ sudo dnf install rpmfusion-nonfree-release-tainted -y
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y 
 
 # Personal stuff
-sudo dnf install gnome-tweaks ffmpegthumbnailer yt-dlp steam discord vlc evolution -y
+sudo dnf install gnome-tweaks ffmpegthumbnailer yt-dlp steam discord vlc thunderbird -y
 sudo dnf remove totem gnome-extensions-app libreoffice-writer libreoffice-impress libreoffice-calc -y 
 
 # NVIDIA Driver
