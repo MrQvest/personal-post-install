@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# USE ARCHINSTALL FOR THE FOLLOWING
+
+# With KDE profile
+## firefox code discord steam nvidia-prime git spotify-launcher flatpak libreoffice-fresh vlc gwenview spectacle udisks2 thunderbird soundconverter imagemagick
+
+# AFTER ARCHINSTALL FINISHES AND REBOOT
+
+# Stuff necessary for steam sound to work
+sudo pacman -S pulseaudio-alsa lib32-libpulse lib32-alsa-plugins
+cd
+
+# Install paru aur helper
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+
+# Install personal flatpak collection
+
+# backup
+flatpak install -y --noninteractive flathub org.gnome.World.PikaBackup
+# easy effects
+flatpak install -y --noninteractive flathub com.github.wwmm.easyeffects
+# flatseal
+flatpak install -y --noninteractive flathub com.github.tchx84.Flatseal
+# keepassxc
+flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
+# blender
+flatpak install -y --noninteractive flathub org.blender.Blender
+# prism launcher
+flatpak install -y --noninteractive flathub org.prismlauncher.PrismLauncher
+# heroic games launcher
+flatpak install -y --noninteractive flathub com.heroicgameslauncher.hgl
+
+# Use paru to install more applications
+paru -S unityhub github-desktop-bin
