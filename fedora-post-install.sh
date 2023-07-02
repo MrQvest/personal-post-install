@@ -25,15 +25,15 @@ sudo dnf install rpmfusion-nonfree-release-tainted -y
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y 
 
 # Personal stuff
-sudo dnf install gnome-tweaks ffmpegthumbnailer yt-dlp steam discord vlc thunderbird adw-gtk3-theme -y
+sudo dnf install gnome-tweaks ffmpegthumbnailer yt-dlp steam discord vlc thunderbird adw-gtk3-theme soundconverter papirus-icon-theme -y
 sudo dnf remove totem gnome-extensions-app libreoffice-writer libreoffice-impress libreoffice-calc -y 
-
-# NVIDIA Driver
-sudo dnf install akmod-nvidia -y
-sudo dnf install xorg-x11-drv-nvidia-cuda -y
 
 # Update the system
 sudo dnf update -y
+
+# NVIDIA Drivers
+sudo dnf install akmod-nvidia -y
+sudo dnf install xorg-x11-drv-nvidia-cuda -y
 
 # Install personal flatpak collection
 
@@ -55,32 +55,20 @@ flatpak install -y --noninteractive flathub org.prismlauncher.PrismLauncher
 flatpak install -y --noninteractive flathub com.unity.UnityHub
 # vscode
 flatpak install -y --noninteractive flathub com.visualstudio.code
-# tor browser launcher
-#flatpak install -y --noninteractive flathub com.github.micahflee.torbrowser-launcher
 # extension manager
 flatpak install -y --noninteractive flathub com.mattjakeman.ExtensionManager
 # flatseal
 flatpak install -y --noninteractive flathub com.github.tchx84.Flatseal
 # qbittorrent
 flatpak install -y --noninteractive flathub org.qbittorrent.qBittorrent
-# webcord
-#flatpak install -y --noninteractive flathub io.github.spacingbat3.webcord
-# thunderbird
-#flatpak install -y --noninteractive flathub org.mozilla.Thunderbird
-# sound converter
-flatpak install -y --noninteractive flathub org.soundconverter.SoundConverter
 # image converter
 flatpak install -y --noninteractive flathub io.gitlab.adhami3310.Converter
 # element
-#flatpak install -y --noninteractive flathub im.riot.Riot
-# handbrake
-#flatpak install -y --noninteractive flathub fr.handbrake.ghb
+flatpak install -y --noninteractive flathub im.riot.Riot
 # godot game engine
 flatpak install -y --noninteractive flathub org.godotengine.Godot
 # blender
 flatpak install -y --noninteractive flathub org.blender.Blender
-# i2pd
-#flatpak install -y --noninteractive flathub website.i2pd.i2pd
 # keepassxc
 flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
 # SDK extensions
