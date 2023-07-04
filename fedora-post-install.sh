@@ -75,3 +75,20 @@ flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
 flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.dotnet7
 flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.dotnet6
 flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.mono6
+
+# Gnome Shell extensions
+#AppIndicator and KStatusNotifierItem Support
+#ArcMenu
+#Blur my Shell
+#Caffeine
+#Clipboard Indicator
+#Dash to Dock
+#Dash to Panel
+#Desktop Icons NG (DING)
+#Firefox PiP Always on Top
+#GSConnect
+#Just Perfection
+#Removable Drive Menu
+#Rounded Window Corners
+#User Themes
+#Vitals
