@@ -25,7 +25,7 @@ sudo dnf install rpmfusion-nonfree-release-tainted -y
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y 
 
 # Personal stuff
-sudo dnf install gnome-tweaks ffmpegthumbnailer yt-dlp steam discord vlc thunderbird adw-gtk3-theme soundconverter papirus-icon-theme -y
+sudo dnf install gnome-tweaks ffmpegthumbnailer yt-dlp steam discord vlc thunderbird adw-gtk3-theme soundconverter papirus-icon-theme zsh -y
 sudo dnf remove totem gnome-extensions-app libreoffice-writer libreoffice-impress libreoffice-calc -y 
 
 # Update the system
@@ -92,3 +92,10 @@ flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.mono6
 #Rounded Window Corners
 #User Themes
 #Vitals
+
+# Setup zsh
+# https://fedoramagazine.org/set-zsh-fedora-system/
+# https://ohmyz.sh/
+# https://github.com/romkatv/powerlevel10k
+# https://github.com/zsh-users/zsh-autosuggestions
+# https://github.com/zsh-users/zsh-syntax-highlighting
