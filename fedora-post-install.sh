@@ -57,8 +57,8 @@ flatpak install -y --noninteractive flathub com.visualstudio.code
 flatpak install -y --noninteractive flathub com.mattjakeman.ExtensionManager
 # flatseal
 flatpak install -y --noninteractive flathub com.github.tchx84.Flatseal
-# qbittorrent
-flatpak install -y --noninteractive flathub org.qbittorrent.qBittorrent
+# torrent client
+flatpak install -y --noninteractive flathub de.haeckerfelix.Fragments
 # image converter
 flatpak install -y --noninteractive flathub io.gitlab.adhami3310.Converter
 # element
@@ -75,21 +75,21 @@ flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.dotnet
 flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.mono6
 
 # Gnome Shell extensions
-#AppIndicator and KStatusNotifierItem Support
-#ArcMenu
-#Blur my Shell
-#Caffeine
-#Clipboard Indicator
-#Dash to Dock
-#Dash to Panel
-#Desktop Icons NG (DING)
-#Firefox PiP Always on Top
-#GSConnect
-#Just Perfection
-#Removable Drive Menu
-#Rounded Window Corners
-#User Themes
-#Vitals
+# AppIndicator and KStatusNotifierItem Support
+# ArcMenu
+# Blur my Shell
+# Caffeine
+# Clipboard Indicator
+# Dash to Dock
+# Dash to Panel
+# Desktop Icons NG (DING)
+# Firefox PiP Always on Top
+# GSConnect
+# Just Perfection
+# Removable Drive Menu
+# Rounded Window Corners
+# User Themes
+# Vitals
 
 # Setup zsh
 # https://fedoramagazine.org/set-zsh-fedora-system/
