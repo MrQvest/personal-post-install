@@ -44,9 +44,7 @@ flatpak install -y --noninteractive flathub com.github.wwmm.easyeffects
 # libreoffice
 flatpak install -y --noninteractive flathub org.libreoffice.LibreOffice
 # spotify
-flatpak install -y --noninteractive flathub com.spotify.Client 
-# github desktop
-flatpak install -y --noninteractive flathub io.github.shiftey.Desktop
+flatpak install -y --noninteractive flathub com.spotify.Client
 # heroic games launcher
 flatpak install -y --noninteractive flathub com.heroicgameslauncher.hgl
 # prism launcher
