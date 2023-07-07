@@ -97,3 +97,8 @@ flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.mono6
 # https://github.com/romkatv/powerlevel10k
 # https://github.com/zsh-users/zsh-autosuggestions
 # https://github.com/zsh-users/zsh-syntax-highlighting
+
+# Discord modifications (Vencord)
+# https://vencord.dev/
+# Script to download and install: 
+# sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
