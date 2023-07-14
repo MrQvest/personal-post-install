@@ -14,6 +14,10 @@ sudo dnf groupupdate sound-and-video -y
 # Install hardware accelerated codecs
 sudo dnf install intel-media-driver -y 
 sudo dnf install libva-intel-driver -y 
+sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld -y
+sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld -y
+sudo dnf swap mesa-va-drivers.i686 mesa-va-drivers-freeworld.i686 -y
+sudo dnf swap mesa-vdpau-drivers.i686 mesa-vdpau-drivers-freeworld.i686 -y
 sudo dnf install nvidia-vaapi-driver -y
 
 # DVD
