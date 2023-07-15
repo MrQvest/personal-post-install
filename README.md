@@ -1,5 +1,5 @@
 # personal-post-install
-personal post installation script for Fedora
+my personal post installation script for Fedora
 
 ## How to execute
 clone this repository
@@ -12,9 +12,9 @@ cd personal-post-install
 ```
 change file permissions
 ```
-chmod +x fedora-post-install.sh 
+chmod +x y-post-install.sh 
 ```
 execute
 ```
-./fedora-post-install.sh
+./y-post-install.sh
 ```
