@@ -29,7 +29,7 @@ sudo dnf install rpmfusion-nonfree-release-tainted -y
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y 
 
 # Personal stuff
-sudo dnf install gnome-tweaks ffmpegthumbnailer yt-dlp steam discord vlc evolution adw-gtk3-theme soundconverter papirus-icon-theme zsh -y
+sudo dnf install gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer yt-dlp steam discord vlc evolution adw-gtk3-theme soundconverter papirus-icon-theme zsh -y
 sudo dnf remove rhythmbox totem gnome-extensions-app libreoffice-writer libreoffice-impress libreoffice-calc -y 
 
 # Update the system
@@ -79,20 +79,15 @@ flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.dotnet
 flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.mono6
 
 # Gnome Shell extensions
-# AppIndicator and KStatusNotifierItem Support
 # ArcMenu
-# Blur my Shell
-# Caffeine
+# Espresso
 # Clipboard Indicator
 # Dash to Dock
 # Dash to Panel
 # Desktop Icons NG (DING)
 # Firefox PiP Always on Top
-# GSConnect
-# Just Perfection
 # Removable Drive Menu
 # Rounded Window Corners
-# User Themes
 # Vitals
 
 # Setup zsh
