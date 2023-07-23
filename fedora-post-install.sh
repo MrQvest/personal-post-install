@@ -63,6 +63,10 @@ flatpak install -y --noninteractive flathub com.mattjakeman.ExtensionManager
 flatpak install -y --noninteractive flathub com.github.tchx84.Flatseal
 # torrent client
 flatpak install -y --noninteractive flathub de.haeckerfelix.Fragments
+# OBS Studio
+flatpak install -y --noninteractive flathub com.obsproject.Studio
+# Kdenlive
+flatpak install -y --noninteractive flathub org.kde.kdenlive
 # image converter
 flatpak install -y --noninteractive flathub io.gitlab.adhami3310.Converter
 # element
@@ -73,6 +77,8 @@ flatpak install -y --noninteractive flathub org.godotengine.Godot
 flatpak install -y --noninteractive flathub org.blender.Blender
 # keepassxc
 flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
+# blanket
+flatpak install -y --noninteractive flathub com.rafaelmardojai.Blanket
 # SDK extensions
 flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.dotnet7
 flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.dotnet6
