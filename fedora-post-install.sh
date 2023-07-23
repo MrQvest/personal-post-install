@@ -41,8 +41,6 @@ sudo dnf install xorg-x11-drv-nvidia-cuda -y
 
 # Install personal flatpak collection
 
-# backup
-flatpak install -y --noninteractive flathub org.gnome.World.PikaBackup
 # easy effects
 flatpak install -y --noninteractive flathub com.github.wwmm.easyeffects
 # libreoffice
