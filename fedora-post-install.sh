@@ -88,7 +88,6 @@ flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.mono6
 # ArcMenu
 # Espresso
 # Clipboard Indicator
-# Dash to Dock
 # Dash to Panel
 # Desktop Icons NG (DING)
 # Firefox PiP Always on Top
