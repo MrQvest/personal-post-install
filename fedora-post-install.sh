@@ -29,7 +29,7 @@ sudo dnf install rpmfusion-nonfree-release-tainted -y
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y 
 
 # Personal stuff
-sudo dnf install heif-pixbuf-loader libheif-tools firejail borgbackup neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer yt-dlp steam discord vlc evolution adw-gtk3-theme soundconverter papirus-icon-theme zsh -y
+sudo dnf install heif-pixbuf-loader libheif-tools borgbackup neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer yt-dlp steam discord vlc evolution adw-gtk3-theme soundconverter papirus-icon-theme zsh -y
 sudo dnf remove rhythmbox totem gnome-extensions-app libreoffice-writer libreoffice-impress libreoffice-calc -y 
 
 # Update the system
