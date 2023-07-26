@@ -37,7 +37,7 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 sudo dnf install heif-pixbuf-loader libheif-tools -y
 
 # Utilities
-sudo dnf install borgbackup neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer -y 
+sudo dnf install grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer -y 
 
 # Essential apps
 sudo dnf install steam discord vlc evolution adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
@@ -64,8 +64,6 @@ sudo dnf install xorg-x11-drv-nvidia-cuda -y
 
 # Install personal flatpak collection
 
-# backup
-flatpak install -y --noninteractive flathub org.gnome.World.PikaBackup
 # easy effects
 flatpak install -y --noninteractive flathub com.github.wwmm.easyeffects
 # libreoffice
