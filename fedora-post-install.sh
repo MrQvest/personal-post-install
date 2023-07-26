@@ -31,7 +31,7 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 # Personal stuff
 
 # Security
-sudo dnf install firejail -y
+#sudo dnf install firejail -y
 
 # .heic extension support (for Apple iOS photos)
 sudo dnf install heif-pixbuf-loader libheif-tools -y
@@ -53,14 +53,14 @@ sudo dnf install akmod-nvidia -y
 sudo dnf install xorg-x11-drv-nvidia-cuda -y
 
 # Set up firejail
-sudo firecfg
+#sudo firecfg
 
 # Allow DRM in browsers
-sudo sed -i 's/^# browser-allow-drm no$/browser-allow-drm yes/' /etc/firejail/firejail.config
-sudo sed -i 's/^# browser-disable-u2f yes$/browser-disable-u2f no/' /etc/firejail/firejail.config
+#sudo sed -i 's/^# browser-allow-drm no$/browser-allow-drm yes/' /etc/firejail/firejail.config
+#sudo sed -i 's/^# browser-disable-u2f yes$/browser-disable-u2f no/' /etc/firejail/firejail.config
 
 # Remove vlc.desktop for it to appear in GNOME Settings
-rm  ~/.local/share/applications/vlc.desktop
+#rm  ~/.local/share/applications/vlc.desktop
 
 # Install personal flatpak collection
 
