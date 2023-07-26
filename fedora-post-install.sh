@@ -29,15 +29,38 @@ sudo dnf install rpmfusion-nonfree-release-tainted -y
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y 
 
 # Personal stuff
-sudo dnf install firejail heif-pixbuf-loader libheif-tools borgbackup neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer yt-dlp steam discord vlc evolution adw-gtk3-theme soundconverter papirus-icon-theme zsh -y
+
+# Security
+sudo dnf install firejail -y
+
+# .heic extension support (for Apple iOS photos)
+sudo dnf install heif-pixbuf-loader libheif-tools -y
+
+# Utilities
+sudo dnf install borgbackup neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer -y 
+
+# Essential apps
+sudo dnf install steam discord vlc evolution adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
+
+# Not needed apps
 sudo dnf remove rhythmbox totem gnome-extensions-app libreoffice-writer libreoffice-impress libreoffice-calc -y 
 
-# Update the system
+# Updating the system
 sudo dnf update -y
 
 # NVIDIA Drivers
 sudo dnf install akmod-nvidia -y
 sudo dnf install xorg-x11-drv-nvidia-cuda -y
+
+# Set up firejail
+sudo firecfg
+
+# Allow DRM in browsers
+sudo sed -i 's/^# browser-allow-drm no$/browser-allow-drm yes/' /etc/firejail/firejail.config
+sudo sed -i 's/^# browser-disable-u2f yes$/browser-disable-u2f no/' /etc/firejail/firejail.config
+
+# Remove vlc.desktop for it to appear in GNOME Settings
+rm  ~/.local/share/applications/vlc.desktop
 
 # Install personal flatpak collection
 
