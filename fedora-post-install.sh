@@ -40,7 +40,7 @@ sudo dnf install heif-pixbuf-loader libheif-tools -y
 sudo dnf install grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer -y 
 
 # Essential apps
-sudo dnf install steam discord vlc evolution adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
+sudo dnf install steam discord vlc adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
 
 # Not needed apps
 sudo dnf remove rhythmbox totem gnome-extensions-app libreoffice-writer libreoffice-impress libreoffice-calc -y 
@@ -70,6 +70,8 @@ flatpak install -y --noninteractive flathub com.github.wwmm.easyeffects
 flatpak install -y --noninteractive flathub org.libreoffice.LibreOffice
 # spotify
 flatpak install -y --noninteractive flathub com.spotify.Client
+# mail (thunderbird)
+flatpak install -y --noninteractive flathub org.mozilla.Thunderbird
 # heroic games launcher
 flatpak install -y --noninteractive flathub com.heroicgameslauncher.hgl
 # prism launcher
