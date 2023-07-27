@@ -117,6 +117,7 @@ flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.mono6
 # Removable Drive Menu
 # Rounded Window Corners
 # Vitals
+# Status Area Horizontal Spacing
 
 # Setup zsh
 # https://fedoramagazine.org/set-zsh-fedora-system/
