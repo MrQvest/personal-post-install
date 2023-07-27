@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Kernel argument to improve system responsiveness
+# To revert it, enter:
+# sudo grubby --remove-args="preempt=full" --update-kernel=ALL
+sudo grubby --args="preempt=full" --update-kernel=ALL
+
 # Install RPM Fusion repositories 
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y 
 
