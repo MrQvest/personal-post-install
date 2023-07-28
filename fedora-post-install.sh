@@ -42,7 +42,7 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 sudo dnf install heif-pixbuf-loader libheif-tools -y
 
 # Utilities
-sudo dnf install grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer -y 
+sudo dnf install transmission grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer -y 
 
 # Essential apps
 sudo dnf install steam discord vlc adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
@@ -89,8 +89,6 @@ flatpak install -y --noninteractive flathub com.visualstudio.code
 flatpak install -y --noninteractive flathub com.mattjakeman.ExtensionManager
 # flatseal
 flatpak install -y --noninteractive flathub com.github.tchx84.Flatseal
-# torrent client
-flatpak install -y --noninteractive flathub de.haeckerfelix.Fragments
 # OBS Studio
 flatpak install -y --noninteractive flathub com.obsproject.Studio
 # Kdenlive
