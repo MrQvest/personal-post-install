@@ -44,11 +44,11 @@ sudo dnf install heif-pixbuf-loader libheif-tools -y
 # Utilities
 sudo dnf install transmission grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer -y 
 
-# Essential apps
+# Essentials
 sudo dnf install steam discord vlc adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
 
 # Not needed apps
-sudo dnf remove rhythmbox totem gnome-extensions-app libreoffice-writer libreoffice-impress libreoffice-calc -y 
+sudo dnf remove firefox rhythmbox totem gnome-extensions-app libreoffice-writer libreoffice-impress libreoffice-calc -y 
 
 # Updating the system
 sudo dnf update -y
@@ -69,6 +69,8 @@ sudo dnf install xorg-x11-drv-nvidia-cuda -y
 
 # Install personal flatpak collection
 
+# firefox
+flatpak install -y --noninteractive flathub org.mozilla.firefox
 # easy effects
 flatpak install -y --noninteractive flathub com.github.wwmm.easyeffects
 # libreoffice
@@ -77,6 +79,8 @@ flatpak install -y --noninteractive flathub org.libreoffice.LibreOffice
 flatpak install -y --noninteractive flathub com.spotify.Client
 # mail (thunderbird)
 flatpak install -y --noninteractive flathub org.mozilla.Thunderbird
+# torbrowser-launcher
+flatpak install -y --noninteractive flathub com.github.micahflee.torbrowser-launcher
 # heroic games launcher
 flatpak install -y --noninteractive flathub com.heroicgameslauncher.hgl
 # prism launcher
