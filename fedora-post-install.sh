@@ -80,6 +80,8 @@ flatpak install -y --noninteractive flathub org.libreoffice.LibreOffice
 flatpak install -y --noninteractive flathub com.spotify.Client
 # mail (thunderbird)
 flatpak install -y --noninteractive flathub org.mozilla.Thunderbird
+# Manuskript (Writing tool)
+flatpak install -y --noninteractive flathub ch.theologeek.Manuskript
 # heroic games launcher
 flatpak install -y --noninteractive flathub com.heroicgameslauncher.hgl
 # prism launcher
