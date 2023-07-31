@@ -5,6 +5,7 @@
 # sudo grubby --remove-args="preempt=full" --update-kernel=ALL
 sudo grubby --args="preempt=full" --update-kernel=ALL
 
+##################################################################
 # RPMFusion stuff
 # Install RPM Fusion repositories 
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y 
@@ -33,6 +34,7 @@ sudo dnf install libdvdcss -y
 # Firmware
 sudo dnf install rpmfusion-nonfree-release-tainted -y
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y 
+##################################################################
 
 # Personal stuff
 
@@ -46,7 +48,7 @@ sudo dnf install heif-pixbuf-loader libheif-tools -y
 sudo dnf install transmission grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer -y 
 
 # Essentials
-sudo dnf install torbrowser-launcher google-chrome-stable steam discord vlc adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
+sudo dnf install torbrowser-launcher chromium steam discord vlc adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
 
 # Not needed apps
 sudo dnf remove rhythmbox totem gnome-extensions-app libreoffice-writer libreoffice-impress libreoffice-calc -y 
@@ -98,6 +100,8 @@ flatpak install -y --noninteractive flathub org.kde.kdenlive
 flatpak install -y --noninteractive flathub io.gitlab.adhami3310.Converter
 # element
 flatpak install -y --noninteractive flathub im.riot.Riot
+# epic asset manager (Unreal Engine)
+flatpak install -y --noninteractive flathub io.github.achetagames.epic_asset_manager
 # godot game engine
 flatpak install -y --noninteractive flathub org.godotengine.Godot
 # blender
