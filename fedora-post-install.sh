@@ -51,7 +51,7 @@ sudo dnf install transmission grsync neovim util-linux-user gnome-shell-extensio
 sudo dnf install torbrowser-launcher chromium steam discord vlc adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
 
 # Stuff for LunarVim
-sudo dnf install pip npm node cargo -y
+sudo dnf install pip npm node cargo gcc-c++ -y
 # Not needed apps
 sudo dnf remove rhythmbox totem gnome-extensions-app libreoffice-writer libreoffice-impress libreoffice-calc -y 
 
