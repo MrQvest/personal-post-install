@@ -50,6 +50,8 @@ sudo dnf install transmission grsync neovim util-linux-user gnome-shell-extensio
 # Essentials
 sudo dnf install torbrowser-launcher chromium steam discord vlc adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
 
+# Stuff for LunarVim
+sudo dnf install pip npm node cargo -y
 # Not needed apps
 sudo dnf remove rhythmbox totem gnome-extensions-app libreoffice-writer libreoffice-impress libreoffice-calc -y 
 
@@ -140,3 +142,7 @@ flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.mono6
 # https://vencord.dev/
 # Script to download and install: 
 # sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
+
+# LunarVim
+# LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
+ 
