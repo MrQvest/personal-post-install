@@ -5,10 +5,10 @@
 # sudo grubby --remove-args="preempt=full" --update-kernel=ALL
 sudo grubby --args="preempt=full" --update-kernel=ALL
 
-# Repositories
+# Third-party repositories
 # Terra (from Ultramarine Linux)
 sudo dnf config-manager --add-repo https://terra.fyralabs.com/terra.repo -y
-
+#
 ##################################################################
 # RPMFusion stuff
 # Install RPM Fusion repositories 
@@ -39,7 +39,7 @@ sudo dnf install libdvdcss -y
 sudo dnf install rpmfusion-nonfree-release-tainted -y
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y 
 ##################################################################
-
+#
 # Personal stuff
 
 # Security
@@ -49,10 +49,10 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 sudo dnf install heif-pixbuf-loader libheif-tools -y
 
 # Utilities
-sudo dnf install distrobox transmission grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer -y 
+sudo dnf install needrestart distrobox transmission grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer -y 
 
 # Essentials
-sudo dnf install agave-nerd-fonts torbrowser-launcher steam armcord vlc adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
+sudo dnf install nheko agave-nerd-fonts torbrowser-launcher steam armcord vlc adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
 
 # Stuff for LunarVim
 sudo dnf install pip npm node cargo gcc-c++ -y
@@ -87,16 +87,10 @@ flatpak install -y --noninteractive flathub org.libreoffice.LibreOffice
 flatpak install -y --noninteractive flathub com.spotify.Client
 # mail (thunderbird)
 flatpak install -y --noninteractive flathub org.mozilla.Thunderbird
-# Manuskript (Writing tool)
-flatpak install -y --noninteractive flathub ch.theologeek.Manuskript
 # heroic games launcher
 flatpak install -y --noninteractive flathub com.heroicgameslauncher.hgl
 # prism launcher
 flatpak install -y --noninteractive flathub org.prismlauncher.PrismLauncher
-# unity hub
-flatpak install -y --noninteractive flathub com.unity.UnityHub
-# vscode
-flatpak install -y --noninteractive flathub com.visualstudio.code
 # extension manager
 flatpak install -y --noninteractive flathub com.mattjakeman.ExtensionManager
 # flatseal
@@ -107,22 +101,12 @@ flatpak install -y --noninteractive flathub com.obsproject.Studio
 flatpak install -y --noninteractive flathub org.kde.kdenlive
 # image converter
 flatpak install -y --noninteractive flathub io.gitlab.adhami3310.Converter
-# element
-flatpak install -y --noninteractive flathub im.riot.Riot
-# epic asset manager (Unreal Engine)
-flatpak install -y --noninteractive flathub io.github.achetagames.epic_asset_manager
 # godot game engine
 flatpak install -y --noninteractive flathub org.godotengine.Godot
-# blender
-flatpak install -y --noninteractive flathub org.blender.Blender
 # keepassxc
 flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
 # blanket
 flatpak install -y --noninteractive flathub com.rafaelmardojai.Blanket
-# SDK extensions
-flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.dotnet7
-flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.dotnet6
-flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.mono6
 
 # Gnome Shell extensions
 # ArcMenu
@@ -142,11 +126,6 @@ flatpak install -y --noninteractive flathub org.freedesktop.Sdk.Extension.mono6
 # https://github.com/romkatv/powerlevel10k
 # https://github.com/zsh-users/zsh-autosuggestions
 # https://github.com/zsh-users/zsh-syntax-highlighting
-
-# Discord modifications (Vencord)
-# https://vencord.dev/
-# Script to download and install: 
-# sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
 
 # LunarVim
 # LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
