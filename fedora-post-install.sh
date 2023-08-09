@@ -52,7 +52,7 @@ sudo dnf install heif-pixbuf-loader libheif-tools -y
 sudo dnf install needrestart distrobox transmission grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer -y 
 
 # Essentials
-sudo dnf install nheko agave-nerd-fonts torbrowser-launcher steam armcord vlc adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
+sudo dnf install agave-nerd-fonts torbrowser-launcher steam armcord vlc adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
 
 # Stuff for LunarVim
 sudo dnf install pip npm node cargo gcc-c++ -y
