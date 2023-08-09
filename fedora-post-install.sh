@@ -4,10 +4,6 @@
 # To revert it, enter:
 # sudo grubby --remove-args="preempt=full" --update-kernel=ALL
 sudo grubby --args="preempt=full" --update-kernel=ALL
-
-# Third-party repositories
-# Terra (from Ultramarine Linux)
-sudo dnf config-manager --add-repo https://terra.fyralabs.com/terra.repo -y
 #
 ##################################################################
 # RPMFusion stuff
@@ -52,13 +48,16 @@ sudo dnf install heif-pixbuf-loader libheif-tools -y
 sudo dnf install needrestart distrobox transmission grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer -y 
 
 # Essentials
-sudo dnf install agave-nerd-fonts torbrowser-launcher steam armcord vlc adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
+sudo dnf install torbrowser-launcher steam vlc adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
 
 # Stuff for LunarVim
 sudo dnf install pip npm node cargo gcc-c++ -y
 
 # Not needed apps
 sudo dnf remove rhythmbox totem gnome-extensions-app libreoffice-writer libreoffice-impress libreoffice-calc -y 
+
+# Automatically downloads Agave nerd font
+wget -O "$HOME/Downloads/Agave.zip" "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Agave.zip"
 
 # Updating the system
 sudo dnf update -y
@@ -93,6 +92,8 @@ flatpak install -y --noninteractive flathub com.heroicgameslauncher.hgl
 flatpak install -y --noninteractive flathub org.prismlauncher.PrismLauncher
 # extension manager
 flatpak install -y --noninteractive flathub com.mattjakeman.ExtensionManager
+# armcord discord client
+flatpak install -y --noninteractive flathub xyz.armcord.ArmCord
 # flatseal
 flatpak install -y --noninteractive flathub com.github.tchx84.Flatseal
 # OBS Studio
