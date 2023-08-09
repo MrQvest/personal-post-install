@@ -8,7 +8,11 @@ sudo grubby --args="preempt=full" --update-kernel=ALL
 # Third-party repositories
 # Terra (from Ultramarine Linux)
 sudo dnf config-manager --add-repo https://terra.fyralabs.com/terra.repo -y
-#
+
+# Copr repositories
+# lazygit (git TUI)
+sudo dnf copr enable atim/lazygit -y
+
 ##################################################################
 # RPMFusion stuff
 # Install RPM Fusion repositories 
@@ -49,7 +53,7 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 sudo dnf install heif-pixbuf-loader libheif-tools -y
 
 # Utilities
-sudo dnf install needrestart distrobox transmission grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer -y 
+sudo dnf install lazygit needrestart distrobox transmission grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer -y 
 
 # Essentials
 sudo dnf install agave-nerd-fonts torbrowser-launcher steam armcord vlc adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
