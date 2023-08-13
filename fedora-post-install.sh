@@ -58,11 +58,17 @@ sudo dnf install lazygit needrestart distrobox transmission grsync neovim util-l
 # Essentials
 sudo dnf install agave-nerd-fonts torbrowser-launcher steam armcord vlc adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
 
-# Stuff for LunarVim
-sudo dnf install pip npm node cargo gcc-c++ -y
+# Stuff for NvChad
+sudo dnf install gcc-c++ -y
 
 # Not needed apps
 sudo dnf remove rhythmbox totem gnome-extensions-app libreoffice-writer libreoffice-impress libreoffice-calc -y 
+
+# zsh configuration
+chsh -s $(which zsh)
+
+# NvChad
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 
 # Updating the system
 sudo dnf update -y
@@ -124,13 +130,7 @@ flatpak install -y --noninteractive flathub com.rafaelmardojai.Blanket
 # Vitals
 # Status Area Horizontal Spacing
 
-# Setup zsh
-# https://fedoramagazine.org/set-zsh-fedora-system/
+# Setup oh-my-zsh
 # https://ohmyz.sh/
-# https://github.com/romkatv/powerlevel10k
 # https://github.com/zsh-users/zsh-autosuggestions
 # https://github.com/zsh-users/zsh-syntax-highlighting
-
-# LunarVim
-# LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
- 
