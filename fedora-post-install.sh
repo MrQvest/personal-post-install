@@ -3,7 +3,7 @@
 # Kernel argument to improve system responsiveness
 # To revert it, enter:
 # sudo grubby --remove-args="preempt=full" --update-kernel=ALL
-sudo grubby --args="preempt=full" --update-kernel=ALL
+#sudo grubby --args="preempt=full" --update-kernel=ALL
 
 # Third-party repositories
 # Terra (from Ultramarine Linux)
