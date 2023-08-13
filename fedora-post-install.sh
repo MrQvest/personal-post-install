@@ -97,6 +97,8 @@ flatpak install -y --noninteractive flathub org.libreoffice.LibreOffice
 flatpak install -y --noninteractive flathub com.spotify.Client
 # mail (thunderbird)
 flatpak install -y --noninteractive flathub org.mozilla.Thunderbird
+# obsidian (markdown editor)
+flatpak install -y --noninteractive flathub md.obsidian.Obsidian
 # heroic games launcher
 flatpak install -y --noninteractive flathub com.heroicgameslauncher.hgl
 # prism launcher
