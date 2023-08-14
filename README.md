@@ -10,11 +10,11 @@ change directory into personal-post-install
 ```
 cd personal-post-install
 ```
-change file permissions
+make it executable
 ```
-chmod +x y-post-install.sh 
+chmod +x xyz-post-install.sh 
 ```
 execute
 ```
-./y-post-install.sh
+./xyz-post-install.sh
 ```
