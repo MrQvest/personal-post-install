@@ -64,11 +64,18 @@ sudo dnf install gcc-c++ -y
 # Not needed apps
 sudo dnf remove rhythmbox totem gnome-extensions-app libreoffice-writer libreoffice-impress libreoffice-calc -y 
 
-# zsh configuration
-chsh -s $(which zsh)
+# Install oh-my-zsh (automated install)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+# dotfiles configuration
+git clone https://github.com/MrQvest/.dotfiles.git
+
+# link dotfiles
+ln -s '~/.dotfiles/mpv' ~/.config
+ln -sf '~/.dotfiles/.zshrc' ~/.zshrc
 
 # NvChad
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 
 
 # Updating the system
 sudo dnf update -y
@@ -133,6 +140,5 @@ flatpak install -y --noninteractive flathub com.rafaelmardojai.Blanket
 # Status Area Horizontal Spacing
 
 # Setup oh-my-zsh
-# https://ohmyz.sh/
 # https://github.com/zsh-users/zsh-autosuggestions
 # https://github.com/zsh-users/zsh-syntax-highlighting
