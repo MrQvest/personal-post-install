@@ -5,13 +5,18 @@
 # sudo grubby --remove-args="preempt=full" --update-kernel=ALL
 #sudo grubby --args="preempt=full" --update-kernel=ALL
 
+# Configure dnf
+echo 'fastestmirror=True' | sudo tee -a /etc/dnf/dnf.conf
+echo 'max_parallel_downloads=10' | sudo tee -a /etc/dnf/dnf.conf
+echo 'deltarpm=True' | sudo tee -a /etc/dnf/dnf.conf
+
 # Third-party repositories
 # Terra (from Ultramarine Linux)
 sudo dnf config-manager --add-repo https://terra.fyralabs.com/terra.repo -y
 
 # Copr repositories
 # lazygit (git TUI)
-sudo dnf copr enable atim/lazygit -y
+#sudo dnf copr enable atim/lazygit -y
 
 ##################################################################
 # RPMFusion stuff
@@ -49,7 +54,7 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 sudo dnf install heif-pixbuf-loader libheif-tools -y
 
 # Utilities
-sudo dnf install lazygit needrestart distrobox transmission grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer -y 
+sudo dnf install needrestart distrobox transmission grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer -y 
 
 # Essentials
 sudo dnf install agave-nerd-fonts torbrowser-launcher steam armcord mpv adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
@@ -63,17 +68,15 @@ sudo dnf remove rhythmbox totem gnome-extensions-app libreoffice-writer libreoff
 # Install oh-my-zsh (automated install)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
+# zsh syntax highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 # dotfiles configuration
-git clone https://github.com/MrQvest/.dotfiles.git
+git clone https://github.com/MrQvest/.dotfiles.git $HOME
 
 # link dotfiles
 ln -sf "$HOME/.dotfiles/mpv" "$HOME/.config"
 ln -sf "$HOME/.dotfiles/.zshrc" "$HOME/.zshrc"
-
-# Configure dnf
-echo 'fastestmirror=True' | sudo tee -a /etc/dnf/dnf.conf
-echo 'max_parallel_downloads=10' | sudo tee -a /etc/dnf/dnf.conf
-echo 'deltarpm=True' | sudo tee -a /etc/dnf/dnf.conf
 
 # NvChad
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 
@@ -142,4 +145,3 @@ flatpak install -y --noninteractive flathub com.rafaelmardojai.Blanket
 
 # Setup oh-my-zsh
 # https://github.com/zsh-users/zsh-autosuggestions
-# https://github.com/zsh-users/zsh-syntax-highlighting
