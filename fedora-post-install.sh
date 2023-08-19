@@ -29,10 +29,6 @@ sudo dnf groupupdate sound-and-video -y
 # Install hardware accelerated codecs
 sudo dnf install intel-media-driver -y 
 sudo dnf install libva-intel-driver -y 
-sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld -y
-sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld -y
-sudo dnf swap mesa-va-drivers.i686 mesa-va-drivers-freeworld.i686 -y
-sudo dnf swap mesa-vdpau-drivers.i686 mesa-vdpau-drivers-freeworld.i686 -y
 sudo dnf install nvidia-vaapi-driver -y
 
 # DVD
@@ -71,8 +67,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone https://github.com/MrQvest/.dotfiles.git
 
 # link dotfiles
-ln -s "$HOME/.dotfiles/mpv" ~/.config
-ln -sf "$HOME/.dotfiles/.zshrc" ~/.zshrc
+ln -sf "$HOME/.dotfiles/mpv" "$HOME/.config"
+ln -sf "$HOME/.dotfiles/.zshrc" "$HOME/.zshrc"
+
+# Configure dnf
+echo 'fastestmirror=True' | sudo tee -a /etc/dnf/dnf.conf
+echo 'max_parallel_downloads=10' | sudo tee -a /etc/dnf/dnf.conf
+echo 'deltarpm=True' | sudo tee -a /etc/dnf/dnf.conf
 
 # NvChad
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 
