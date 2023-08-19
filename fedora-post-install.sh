@@ -71,8 +71,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone https://github.com/MrQvest/.dotfiles.git
 
 # link dotfiles
-ln -s '~/.dotfiles/mpv' ~/.config
-ln -sf '~/.dotfiles/.zshrc' ~/.zshrc
+ln -s "$HOME/.dotfiles/mpv" ~/.config
+ln -sf "$HOME/.dotfiles/.zshrc" ~/.zshrc
 
 # NvChad
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 
