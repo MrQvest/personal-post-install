@@ -77,6 +77,7 @@ git clone https://github.com/MrQvest/.dotfiles.git $HOME
 # link dotfiles
 ln -sf "$HOME/.dotfiles/mpv" "$HOME/.config"
 ln -sf "$HOME/.dotfiles/.zshrc" "$HOME/.zshrc"
+ln -sf "$HOME/.dotfiles/.gitconfig" "$HOME"
 
 # NvChad
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 
