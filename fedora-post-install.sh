@@ -5,10 +5,22 @@
 # sudo grubby --remove-args="preempt=full" --update-kernel=ALL
 #sudo grubby --args="preempt=full" --update-kernel=ALL
 
-# Configure dnf
+# dnf configuration
 echo 'fastestmirror=True' | sudo tee -a /etc/dnf/dnf.conf
 echo 'max_parallel_downloads=10' | sudo tee -a /etc/dnf/dnf.conf
 echo 'deltarpm=True' | sudo tee -a /etc/dnf/dnf.conf
+
+# GDM configuration
+sudo touch /etc/dconf/db/gdm.d/06-tap-to-click
+sudo touch /etc/dconf/db/gdm.d/11-icon-settings
+
+echo '[org/gnome/desktop/peripherals/touchpad]' | sudo tee -a /etc/dconf/db/gdm.d/06-tap-to-click
+echo 'tap-to-click=true' | sudo tee -a /etc/dconf/db/gdm.d/06-tap-to-click
+
+echo '[org/gnome/desktop/interface]' | sudo tee -a /etc/dconf/db/gdm.d/11-icon-settings
+echo 'icon-theme='Papirus-Dark'' | sudo tee -a /etc/dconf/db/gdm.d/11-icon-settings
+
+dconf update
 
 # Third-party repositories
 # Terra (from Ultramarine Linux)
@@ -50,7 +62,7 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 # Security
 #sudo dnf install firejail -y
 
-# .heic extension support (for Apple iOS photos)
+# .heic extension support (for Apple photos)
 sudo dnf install heif-pixbuf-loader libheif-tools -y
 
 # Utilities
@@ -77,7 +89,6 @@ git clone https://github.com/MrQvest/.dotfiles.git $HOME
 # link dotfiles
 ln -sf "$HOME/.dotfiles/mpv" "$HOME/.config"
 ln -sf "$HOME/.dotfiles/.zshrc" "$HOME/.zshrc"
-ln -sf "$HOME/.dotfiles/.gitconfig" "$HOME"
 
 # NvChad
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 
