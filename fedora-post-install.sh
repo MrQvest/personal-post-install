@@ -18,7 +18,7 @@ echo '[org/gnome/desktop/peripherals/touchpad]' | sudo tee -a /etc/dconf/db/gdm.
 echo 'tap-to-click=true' | sudo tee -a /etc/dconf/db/gdm.d/06-tap-to-click
 
 echo '[org/gnome/desktop/interface]' | sudo tee -a /etc/dconf/db/gdm.d/11-icon-settings
-echo 'icon-theme='Papirus-Dark'' | sudo tee -a /etc/dconf/db/gdm.d/11-icon-settings
+echo 'icon-theme="Papirus-Dark"' | sudo tee -a /etc/dconf/db/gdm.d/11-icon-settings
 
 dconf update
 
