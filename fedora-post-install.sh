@@ -20,15 +20,7 @@ echo 'tap-to-click=true' | sudo tee -a /etc/dconf/db/gdm.d/06-tap-to-click
 echo '[org/gnome/desktop/interface]' | sudo tee -a /etc/dconf/db/gdm.d/11-icon-settings
 echo 'icon-theme="Papirus-Dark"' | sudo tee -a /etc/dconf/db/gdm.d/11-icon-settings
 
-dconf update
-
-# Third-party repositories
-# Terra (from Ultramarine Linux)
-sudo dnf config-manager --add-repo https://terra.fyralabs.com/terra.repo -y
-
-# Copr repositories
-# lazygit (git TUI)
-#sudo dnf copr enable atim/lazygit -y
+sudo dconf update
 
 ##################################################################
 # RPMFusion stuff
@@ -56,11 +48,8 @@ sudo dnf install libdvdcss -y
 sudo dnf install rpmfusion-nonfree-release-tainted -y
 sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y 
 ##################################################################
-#
-# Personal stuff
 
-# Security
-#sudo dnf install firejail -y
+# Personal stuff
 
 # .heic extension support (for Apple photos)
 sudo dnf install heif-pixbuf-loader libheif-tools -y
@@ -69,7 +58,7 @@ sudo dnf install heif-pixbuf-loader libheif-tools -y
 sudo dnf install needrestart distrobox transmission grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-tweaks ffmpegthumbnailer -y 
 
 # Essentials
-sudo dnf install agave-nerd-fonts torbrowser-launcher steam armcord mpv adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
+sudo dnf install torbrowser-launcher steam discord mpv adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
 
 # Stuff for NvChad
 sudo dnf install gcc-c++ -y
@@ -84,7 +73,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # dotfiles configuration
-git clone https://github.com/MrQvest/.dotfiles.git $HOME
+git clone https://github.com/MrQvest/.dotfiles.git $HOME/.dotfiles
 
 # link dotfiles
 ln -sf "$HOME/.dotfiles/mpv" "$HOME/.config"
@@ -99,16 +88,6 @@ sudo dnf update -y
 # NVIDIA Drivers
 sudo dnf install akmod-nvidia -y
 sudo dnf install xorg-x11-drv-nvidia-cuda -y
-
-# Set up firejail
-#sudo firecfg
-
-# Allow DRM in browsers
-#sudo sed -i 's/^# browser-allow-drm no$/browser-allow-drm yes/' /etc/firejail/firejail.config
-#sudo sed -i 's/^# browser-disable-u2f yes$/browser-disable-u2f no/' /etc/firejail/firejail.config
-
-# Remove vlc.desktop for it to appear in GNOME Settings
-#rm  ~/.local/share/applications/vlc.desktop
 
 # Install personal flatpak collection
 
