@@ -63,7 +63,7 @@ sudo dnf install torbrowser-launcher steam discord mpv adw-gtk3-theme soundconve
 sudo dnf install gcc-c++ -y
 
 # Not needed apps
-sudo dnf remove rhythmbox totem gnome-extensions-app libreoffice-writer libreoffice-impress libreoffice-calc -y 
+sudo dnf remove gnome-software rhythmbox totem gnome-extensions-app libreoffice-writer libreoffice-impress libreoffice-calc -y 
 
 # Install oh-my-zsh (automated install)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
