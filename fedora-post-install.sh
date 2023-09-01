@@ -11,13 +11,13 @@ echo 'max_parallel_downloads=10' | sudo tee -a /etc/dnf/dnf.conf
 
 # GDM configuration
 sudo touch /etc/dconf/db/gdm.d/06-tap-to-click
-sudo touch /etc/dconf/db/gdm.d/11-icon-settings
+#sudo touch /etc/dconf/db/gdm.d/11-icon-settings
 
 echo '[org/gnome/desktop/peripherals/touchpad]' | sudo tee -a /etc/dconf/db/gdm.d/06-tap-to-click
 echo 'tap-to-click=true' | sudo tee -a /etc/dconf/db/gdm.d/06-tap-to-click
 
-echo '[org/gnome/desktop/interface]' | sudo tee -a /etc/dconf/db/gdm.d/11-icon-settings
-echo 'icon-theme="Papirus-Dark"' | sudo tee -a /etc/dconf/db/gdm.d/11-icon-settings
+#echo '[org/gnome/desktop/interface]' | sudo tee -a /etc/dconf/db/gdm.d/11-icon-settings
+#echo 'icon-theme="Papirus-Dark"' | sudo tee -a /etc/dconf/db/gdm.d/11-icon-settings
 
 sudo dconf update
 
@@ -57,7 +57,7 @@ sudo dnf install heif-pixbuf-loader libheif-tools -y
 sudo dnf install needrestart distrobox transmission grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-shell-extension-auto-move-windows gnome-shell-extension-drive-menu gnome-shell-extension-workspace-indicator gnome-tweaks ffmpegthumbnailer -y 
 
 # Essentials
-sudo dnf install torbrowser-launcher steam discord mpv adw-gtk3-theme soundconverter papirus-icon-theme zsh yt-dlp -y
+sudo dnf install torbrowser-launcher steam discord mpv adw-gtk3-theme soundconverter zsh yt-dlp -y
 
 # Stuff for NvChad
 sudo dnf install gcc-c++ -y
