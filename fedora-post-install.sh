@@ -57,10 +57,7 @@ sudo dnf install heif-pixbuf-loader libheif-tools -y
 sudo dnf install distrobox transmission grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-shell-extension-auto-move-windows gnome-shell-extension-drive-menu gnome-shell-extension-workspace-indicator gnome-tweaks ffmpegthumbnailer -y 
 
 # Essentials
-sudo dnf install torbrowser-launcher steam discord mpv adw-gtk3-theme soundconverter zsh yt-dlp -y
-
-# Stuff for NvChad
-sudo dnf install gcc-c++ -y
+sudo dnf install torbrowser-launcher steam discord mpv adw-gtk3-theme zsh yt-dlp -y
 
 # Not needed apps
 sudo dnf remove rhythmbox totem gnome-extensions-app libreoffice-core -y 
@@ -77,9 +74,6 @@ git clone https://github.com/MrQvest/.dotfiles.git $HOME/.dotfiles
 # link dotfiles
 ln -sf "$HOME/.dotfiles/mpv" "$HOME/.config"
 ln -sf "$HOME/.dotfiles/.zshrc" "$HOME/.zshrc"
-
-# NvChad
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 
 
 # Updating the system
 sudo dnf update -y
@@ -112,8 +106,6 @@ flatpak install -y --noninteractive flathub com.github.tchx84.Flatseal
 flatpak install -y --noninteractive flathub com.obsproject.Studio
 # Kdenlive
 flatpak install -y --noninteractive flathub org.kde.kdenlive
-# image converter
-flatpak install -y --noninteractive flathub io.gitlab.adhami3310.Converter
 # godot game engine
 flatpak install -y --noninteractive flathub org.godotengine.Godot
 # keepassxc
