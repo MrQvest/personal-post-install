@@ -68,6 +68,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # zsh syntax highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+# zsh autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 # dotfiles configuration
 git clone https://github.com/MrQvest/.dotfiles.git $HOME/.dotfiles
 
@@ -125,6 +128,3 @@ flatpak install -y --noninteractive flathub com.rafaelmardojai.Blanket
 # Vitals
 # Status Area Horizontal Spacing
 # Dotspaces
-
-# Setup oh-my-zsh
-# https://github.com/zsh-users/zsh-autosuggestions
