@@ -115,6 +115,8 @@ flatpak install -y --noninteractive flathub org.godotengine.Godot
 flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
 # blanket
 flatpak install -y --noninteractive flathub com.rafaelmardojai.Blanket
+# GIMP
+flatpak install -y --noninteractive flathub org.gimp.GIMP
 
 # Gnome Shell extensions
 # ArcMenu
