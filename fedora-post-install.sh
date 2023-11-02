@@ -23,20 +23,20 @@ sudo dconf update
 
 ##################################################################
 # RPMFusion stuff
-# Install RPM Fusion repositories 
-sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y 
+# Install RPM Fusion repositories
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 
 # AppStream metadata
 sudo dnf groupupdate core -y
 
 # Multimedia stuff / codecs
-sudo dnf swap ffmpeg-free ffmpeg --allowerasing -y 
+sudo dnf swap ffmpeg-free ffmpeg --allowerasing -y
 sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin -y
 sudo dnf groupupdate sound-and-video -y
 
 # Install hardware accelerated codecs
-sudo dnf install intel-media-driver -y 
-sudo dnf install libva-intel-driver -y 
+sudo dnf install intel-media-driver -y
+sudo dnf install libva-intel-driver -y
 sudo dnf install nvidia-vaapi-driver -y
 
 # DVD
@@ -45,7 +45,7 @@ sudo dnf install libdvdcss -y
 
 # Firmware
 sudo dnf install rpmfusion-nonfree-release-tainted -y
-sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y 
+sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 ##################################################################
 
 # Personal stuff
@@ -54,13 +54,16 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 sudo dnf install heif-pixbuf-loader libheif-tools -y
 
 # Utilities
-sudo dnf install distrobox transmission grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-shell-extension-auto-move-windows gnome-shell-extension-drive-menu gnome-shell-extension-workspace-indicator gnome-tweaks ffmpegthumbnailer -y 
+sudo dnf install distrobox transmission grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-shell-extension-auto-move-windows gnome-shell-extension-drive-menu gnome-shell-extension-workspace-indicator gnome-tweaks ffmpegthumbnailer -y
+
+# Nvim Treesitter
+sudo dnf install gcc-c++
 
 # Essentials
 sudo dnf install torbrowser-launcher steam discord mpv adw-gtk3-theme zsh yt-dlp -y
 
 # Not needed apps
-sudo dnf remove rhythmbox totem gnome-extensions-app libreoffice-core -y 
+sudo dnf remove rhythmbox totem gnome-extensions-app libreoffice-core -y
 
 # Install oh-my-zsh (automated install)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
@@ -77,6 +80,7 @@ git clone https://github.com/MrQvest/.dotfiles.git $HOME/.dotfiles
 # link dotfiles
 ln -sf "$HOME/.dotfiles/mpv" "$HOME/.config"
 ln -sf "$HOME/.dotfiles/.zshrc" "$HOME/.zshrc"
+ln -sf "$HOME/.dotfiles/nvim" "$HOME/.config"
 
 # Updating the system
 sudo dnf update -y
