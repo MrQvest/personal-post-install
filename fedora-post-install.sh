@@ -54,7 +54,7 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 sudo dnf install heif-pixbuf-loader libheif-tools -y
 
 # Utilities
-sudo dnf install distrobox transmission grsync neovim util-linux-user gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-shell-extension-auto-move-windows gnome-shell-extension-drive-menu gnome-shell-extension-workspace-indicator gnome-tweaks ffmpegthumbnailer -y
+sudo dnf install distrobox transmission grsync neovim util-linux-user gnome-shell-extension-forge gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-shell-extension-auto-move-windows gnome-shell-extension-drive-menu gnome-shell-extension-workspace-indicator gnome-tweaks ffmpegthumbnailer -y
 
 # Nvim Treesitter
 sudo dnf install gcc-c++
@@ -133,4 +133,3 @@ flatpak install -y --noninteractive flathub org.gimp.GIMP
 # Rounded Window Corners
 # Vitals
 # Status Area Horizontal Spacing
-# Dotspaces
