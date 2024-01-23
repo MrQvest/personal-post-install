@@ -54,13 +54,10 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 sudo dnf install heif-pixbuf-loader libheif-tools -y
 
 # Utilities
-sudo dnf install distrobox transmission grsync neovim util-linux-user gnome-shell-extension-forge gnome-shell-extension-dash-to-dock gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-blur-my-shell gnome-shell-extension-user-theme gnome-shell-extension-auto-move-windows gnome-shell-extension-drive-menu gnome-shell-extension-workspace-indicator gnome-tweaks ffmpegthumbnailer -y
-
-# Nvim Treesitter
-sudo dnf install gcc-c++
+sudo dnf install transmission grsync neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-auto-move-windows gnome-shell-extension-drive-menu gnome-tweaks ffmpegthumbnailer -y
 
 # Essentials
-sudo dnf install torbrowser-launcher steam discord mpv adw-gtk3-theme zsh yt-dlp -y
+sudo dnf install torbrowser-launcher steam gnome-music adw-gtk3-theme zsh yt-dlp -y
 
 # Not needed apps
 sudo dnf remove rhythmbox totem gnome-extensions-app libreoffice-core -y
@@ -79,8 +76,6 @@ git clone https://github.com/MrQvest/.dotfiles.git $HOME/.dotfiles
 
 # link dotfiles
 ln -sf "$HOME/.dotfiles/mpv" "$HOME/.config"
-ln -sf "$HOME/.dotfiles/.zshrc" "$HOME/.zshrc"
-ln -sf "$HOME/.dotfiles/nvim" "$HOME/.config"
 
 # Updating the system
 sudo dnf update -y
@@ -95,8 +90,6 @@ sudo dnf install xorg-x11-drv-nvidia-cuda -y
 flatpak install -y --noninteractive flathub com.github.wwmm.easyeffects
 # libreoffice
 flatpak install -y --noninteractive flathub org.libreoffice.LibreOffice
-# spotify
-flatpak install -y --noninteractive flathub com.spotify.Client
 # mail (thunderbird)
 flatpak install -y --noninteractive flathub org.mozilla.Thunderbird
 # obsidian (markdown editor)
@@ -109,12 +102,6 @@ flatpak install -y --noninteractive flathub org.prismlauncher.PrismLauncher
 flatpak install -y --noninteractive flathub com.mattjakeman.ExtensionManager
 # flatseal
 flatpak install -y --noninteractive flathub com.github.tchx84.Flatseal
-# OBS Studio
-flatpak install -y --noninteractive flathub com.obsproject.Studio
-# Kdenlive
-flatpak install -y --noninteractive flathub org.kde.kdenlive
-# godot game engine
-flatpak install -y --noninteractive flathub org.godotengine.Godot
 # keepassxc
 flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
 # blanket
