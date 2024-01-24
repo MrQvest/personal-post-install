@@ -57,7 +57,7 @@ sudo dnf install heif-pixbuf-loader libheif-tools -y
 sudo dnf install transmission grsync neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-auto-move-windows gnome-shell-extension-drive-menu gnome-tweaks ffmpegthumbnailer -y
 
 # Essentials
-sudo dnf install torbrowser-launcher steam adw-gtk3-theme zsh yt-dlp mpv -y
+sudo dnf install strawberry torbrowser-launcher steam adw-gtk3-theme zsh yt-dlp mpv -y
 
 # Not needed apps
 sudo dnf remove rhythmbox totem gnome-extensions-app yelp simple-scan mediawriter -y
