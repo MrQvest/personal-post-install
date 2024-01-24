@@ -57,10 +57,11 @@ sudo dnf install heif-pixbuf-loader libheif-tools -y
 sudo dnf install transmission grsync neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-auto-move-windows gnome-shell-extension-drive-menu gnome-tweaks ffmpegthumbnailer -y
 
 # Essentials
-sudo dnf install torbrowser-launcher steam gnome-music adw-gtk3-theme zsh yt-dlp -y
+sudo dnf install torbrowser-launcher steam adw-gtk3-theme zsh yt-dlp mpv -y
 
 # Not needed apps
-sudo dnf remove rhythmbox totem gnome-extensions-app libreoffice-core -y
+sudo dnf remove rhythmbox totem gnome-extensions-app yelp simple-scan mediawriter -y
+sudo dnf group remove Libreoffice -y
 
 # Install oh-my-zsh (automated install)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
@@ -108,6 +109,8 @@ flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
 flatpak install -y --noninteractive flathub com.rafaelmardojai.Blanket
 # GIMP
 flatpak install -y --noninteractive flathub org.gimp.GIMP
+# music player (amberol)
+flatpak install -y --noninteractive flathub io.bassi.Amberol
 
 # Gnome Shell extensions
 # ArcMenu
