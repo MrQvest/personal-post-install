@@ -107,10 +107,8 @@ flatpak install -y --noninteractive flathub com.github.tchx84.Flatseal
 flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
 # blanket
 flatpak install -y --noninteractive flathub com.rafaelmardojai.Blanket
-# GIMP
-flatpak install -y --noninteractive flathub org.gimp.GIMP
-# music player (amberol)
-flatpak install -y --noninteractive flathub io.bassi.Amberol
+# discord
+flatpak install -y --noninteractive flathub com.discordapp.Discord
 
 # Gnome Shell extensions
 # ArcMenu
