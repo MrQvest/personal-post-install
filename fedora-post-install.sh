@@ -54,13 +54,13 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 sudo dnf install heif-pixbuf-loader libheif-tools -y
 
 # Utilities
-sudo dnf install transmission grsync neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-auto-move-windows gnome-shell-extension-drive-menu gnome-tweaks ffmpegthumbnailer -y
+sudo dnf install transmission grsync neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-auto-move-windows gnome-shell-extension-drive-menu gnome-shell-extension-openweather gnome-tweaks ffmpegthumbnailer -y
 
 # Essentials
 sudo dnf install strawberry torbrowser-launcher steam adw-gtk3-theme zsh yt-dlp mpv -y
 
 # Not needed apps
-sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections -y
+sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections gnome-clocks gnome-contacts gnome-weather gnome-text-editor gnome-calculator -y
 sudo dnf group remove Libreoffice -y
 
 # Install oh-my-zsh (automated install)
