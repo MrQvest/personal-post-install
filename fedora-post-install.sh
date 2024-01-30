@@ -60,7 +60,7 @@ sudo dnf install transmission grsync neovim util-linux-user gnome-shell-extensio
 sudo dnf install strawberry torbrowser-launcher steam adw-gtk3-theme zsh yt-dlp mpv papirus-icon-theme -y
 
 # Not needed apps
-sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections gnome-clocks gnome-contacts gnome-weather gnome-text-editor gnome-calculator gnome-terminal gnome-shell-extension-gamemode -y
+sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections gnome-clocks gnome-contacts gnome-weather gnome-text-editor gnome-calculator gnome-terminal gnome-boxes gnome-shell-extension-gamemode -y
 sudo dnf group remove Libreoffice -y
 
 # Install oh-my-zsh (automated install)
