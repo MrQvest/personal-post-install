@@ -54,7 +54,7 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 sudo dnf install heif-pixbuf-loader libheif-tools -y
 
 # Utilities
-sudo dnf install transmission grsync neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-drive-menu gnome-tweaks gnome-console ffmpegthumbnailer google-noto-sans-runic-fonts -y
+sudo dnf install transmission grsync neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-drive-menu gnome-tweaks gnome-console ffmpegthumbnailer google-noto-sans-runic-fonts zsh-syntax-highlighting zsh-autosuggestions -y
 
 # Essentials
 sudo dnf install strawberry torbrowser-launcher steam adw-gtk3-theme zsh yt-dlp mpv papirus-icon-theme -y
@@ -65,12 +65,6 @@ sudo dnf group remove Libreoffice -y
 
 # Install oh-my-zsh (automated install)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-
-# zsh syntax highlighting
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-# zsh autosuggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # dotfiles configuration
 git clone https://github.com/MrQvest/.dotfiles.git $HOME/.dotfiles
