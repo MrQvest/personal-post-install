@@ -54,23 +54,17 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 sudo dnf install heif-pixbuf-loader libheif-tools -y
 
 # Utilities
-sudo dnf install transmission grsync neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-drive-menu gnome-tweaks gnome-console ffmpegthumbnailer google-noto-sans-runic-fonts zsh-syntax-highlighting zsh-autosuggestions -y
+sudo dnf install transmission grsync neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-drive-menu gnome-tweaks ffmpegthumbnailer google-noto-sans-runic-fonts -y
 
 # Essentials
-sudo dnf install strawberry torbrowser-launcher steam adw-gtk3-theme zsh yt-dlp mpv papirus-icon-theme -y
+sudo dnf install strawberry torbrowser-launcher steam adw-gtk3-theme yt-dlp papirus-icon-theme -y
 
 # Not needed apps
-sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections gnome-clocks gnome-contacts gnome-weather gnome-text-editor gnome-calculator gnome-terminal gnome-shell-extension-gamemode -y
+sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections gnome-clocks gnome-contacts gnome-weather gnome-text-editor gnome-calculator gnome-shell-extension-gamemode -y
 sudo dnf group remove Libreoffice -y
-
-# Install oh-my-zsh (automated install)
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # dotfiles configuration
 git clone https://github.com/MrQvest/.dotfiles.git $HOME/.dotfiles
-
-# link dotfiles
-ln -sf "$HOME/.dotfiles/mpv" "$HOME/.config"
 
 # Updating the system
 sudo dnf update -y
@@ -83,6 +77,8 @@ sudo dnf install xorg-x11-drv-nvidia-cuda -y
 
 # easy effects
 flatpak install -y --noninteractive flathub com.github.wwmm.easyeffects
+# mpv
+flatpak install -y --noninteractive flathub io.mpv.Mpv
 # libreoffice
 flatpak install -y --noninteractive flathub org.libreoffice.LibreOffice
 # mail (thunderbird)
