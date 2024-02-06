@@ -60,7 +60,7 @@ sudo dnf install transmission grsync neovim util-linux-user gnome-shell-extensio
 sudo dnf install strawberry torbrowser-launcher steam adw-gtk3-theme yt-dlp papirus-icon-theme -y
 
 # Not needed apps
-sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections gnome-clocks gnome-contacts gnome-weather gnome-text-editor gnome-calculator gnome-shell-extension-gamemode -y
+sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections gnome-clocks gnome-contacts gnome-weather gnome-text-editor gnome-calculator gnome-tour gnome-system-monitor gnome-shell-extension-gamemode -y
 sudo dnf group remove Libreoffice -y
 
 # dotfiles configuration
@@ -99,6 +99,8 @@ flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
 flatpak install -y --noninteractive flathub com.rafaelmardojai.Blanket
 # discord
 flatpak install -y --noninteractive flathub com.discordapp.Discord
+# task manager
+flatpak install -y --noninteractive flathub io.missioncenter.MissionCenter
 
 # Gnome Shell extensions
 # ArcMenu
