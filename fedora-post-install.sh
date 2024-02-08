@@ -54,7 +54,7 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 sudo dnf install heif-pixbuf-loader libheif-tools -y
 
 # Utilities
-sudo dnf install qbittorrent grsync neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-drive-menu gnome-tweaks ffmpegthumbnailer google-noto-sans-runic-fonts neofetch htop -y
+sudo dnf install grsync neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-drive-menu gnome-tweaks ffmpegthumbnailer google-noto-sans-runic-fonts neofetch htop -y
 
 # Essentials
 sudo dnf install strawberry torbrowser-launcher steam adw-gtk3-theme yt-dlp papirus-icon-theme -y
@@ -99,6 +99,8 @@ flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
 flatpak install -y --noninteractive flathub com.rafaelmardojai.Blanket
 # discord
 flatpak install -y --noninteractive flathub com.discordapp.Discord
+# qbittorrent
+flatpak install -y --noninteractive flathub org.qbittorrent.qBittorrent
 
 # Gnome Shell extensions
 # ArcMenu
