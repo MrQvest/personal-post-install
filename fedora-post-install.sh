@@ -54,7 +54,7 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 sudo dnf install heif-pixbuf-loader libheif-tools -y
 
 # Utilities
-sudo dnf install transmission grsync neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-drive-menu gnome-tweaks ffmpegthumbnailer google-noto-sans-runic-fonts neofetch -y
+sudo dnf install transmission grsync neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-drive-menu gnome-tweaks ffmpegthumbnailer google-noto-sans-runic-fonts neofetch htop -y
 
 # Essentials
 sudo dnf install strawberry torbrowser-launcher steam adw-gtk3-theme yt-dlp yaru-icon-theme -y
@@ -99,8 +99,6 @@ flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
 flatpak install -y --noninteractive flathub com.rafaelmardojai.Blanket
 # discord
 flatpak install -y --noninteractive flathub com.discordapp.Discord
-# task manager
-flatpak install -y --noninteractive flathub io.missioncenter.MissionCenter
 
 # Gnome Shell extensions
 # ArcMenu
