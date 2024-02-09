@@ -54,17 +54,20 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 sudo dnf install heif-pixbuf-loader libheif-tools -y
 
 # Utilities
-sudo dnf install grsync neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-drive-menu gnome-tweaks ffmpegthumbnailer google-noto-sans-runic-fonts neofetch htop -y
+sudo dnf install grsync neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-drive-menu gnome-shell-extension-blur-my-shell gnome-shell-extension-dash-to-dock gnome-tweaks ffmpegthumbnailer google-noto-sans-runic-fonts neofetch htop -y
 
 # Essentials
-sudo dnf install strawberry torbrowser-launcher steam adw-gtk3-theme yt-dlp papirus-icon-theme -y
+sudo dnf install strawberry torbrowser-launcher steam adw-gtk3-theme yt-dlp zsh zsh-autosuggestions zsh-syntax-highlighting gh papirus-icon-theme -y
 
 # Not needed apps
-sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections gnome-clocks gnome-contacts gnome-weather gnome-text-editor gnome-calculator gnome-tour gnome-system-monitor gnome-shell-extension-gamemode gnome-classic-session -y
+sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections gnome-clocks gnome-contacts gnome-weather gnome-text-editor gnome-calculator gnome-tour gnome-system-monitor gnome-shell-extension-gamemode gnome-classic-session gnome-font-viewer gnome-characters loupe gnome-calendar cheesegnome-maps -y
 sudo dnf group remove Libreoffice -y
 
 # dotfiles configuration
 git clone https://github.com/MrQvest/.dotfiles.git $HOME/.dotfiles
+
+# install ohmyzsh (unattended)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # Updating the system
 sudo dnf update -y
@@ -74,33 +77,7 @@ sudo dnf install akmod-nvidia -y
 sudo dnf install xorg-x11-drv-nvidia-cuda -y
 
 # Install personal flatpak collection
-
-# easy effects
-flatpak install -y --noninteractive flathub com.github.wwmm.easyeffects
-# mpv
-flatpak install -y --noninteractive flathub io.mpv.Mpv
-# libreoffice
-flatpak install -y --noninteractive flathub org.libreoffice.LibreOffice
-# mail (thunderbird)
-flatpak install -y --noninteractive flathub org.mozilla.Thunderbird
-# obsidian (markdown editor)
-flatpak install -y --noninteractive flathub md.obsidian.Obsidian
-# heroic games launcher
-flatpak install -y --noninteractive flathub com.heroicgameslauncher.hgl
-# prism launcher
-flatpak install -y --noninteractive flathub org.prismlauncher.PrismLauncher
-# extension manager
-flatpak install -y --noninteractive flathub com.mattjakeman.ExtensionManager
-# flatseal
-flatpak install -y --noninteractive flathub com.github.tchx84.Flatseal
-# keepassxc
-flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
-# blanket
-flatpak install -y --noninteractive flathub com.rafaelmardojai.Blanket
-# discord
-flatpak install -y --noninteractive flathub com.discordapp.Discord
-# qbittorrent
-flatpak install -y --noninteractive flathub org.qbittorrent.qBittorrent
+flatpak install -y --noninteractive flathub com.github.wwmm.easyeffects io.mpv.Mpv org.libreoffice.LibreOffice org.mozilla.Thunderbird md.obsidian.Obsidian com.heroicgameslauncher.hgl org.prismlauncher.PrismLauncher com.mattjakeman.ExtensionManager com.github.tchx84.Flatseal org.keepassxc.KeePassXC com.rafaelmardojai.Blanket com.discordapp.Discord org.qbittorrent.qBittorrent org.gnome.Calendar org.gnome.Characters org.gnome.Cheese org.gnome.Loupe org.gnome.Maps org.gnome.font-viewer
 
 # Gnome Shell extensions
 # ArcMenu
