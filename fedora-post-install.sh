@@ -60,7 +60,7 @@ sudo dnf install grsync neovim util-linux-user gnome-shell-extension-appindicato
 sudo dnf install strawberry torbrowser-launcher steam adw-gtk3-theme yt-dlp zsh zsh-autosuggestions zsh-syntax-highlighting gh papirus-icon-theme -y
 
 # Not needed apps
-sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections gnome-clocks gnome-contacts gnome-weather gnome-text-editor gnome-calculator gnome-tour gnome-system-monitor gnome-shell-extension-gamemode gnome-classic-session gnome-font-viewer gnome-characters loupe gnome-calendar cheesegnome-maps -y
+sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections gnome-clocks gnome-contacts gnome-weather gnome-text-editor gnome-calculator gnome-tour gnome-system-monitor gnome-shell-extension-gamemode gnome-classic-session gnome-font-viewer gnome-characters loupe gnome-calendar cheese gnome-maps -y
 sudo dnf group remove Libreoffice -y
 
 # dotfiles configuration
