@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Kernel argument to improve system responsiveness
-# To revert it, enter:
-# sudo grubby --remove-args="preempt=full" --update-kernel=ALL
-#sudo grubby --args="preempt=full" --update-kernel=ALL
-
 # dnf configuration
 echo 'fastestmirror=True' | sudo tee -a /etc/dnf/dnf.conf
 echo 'max_parallel_downloads=10' | sudo tee -a /etc/dnf/dnf.conf
@@ -69,9 +64,6 @@ git clone https://github.com/MrQvest/.dotfiles.git $HOME/.dotfiles
 # install ohmyzsh (unattended)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
-# Updating the system
-sudo dnf update -y
-
 # NVIDIA Drivers
 sudo dnf install akmod-nvidia -y
 sudo dnf install xorg-x11-drv-nvidia-cuda -y
@@ -80,12 +72,7 @@ sudo dnf install xorg-x11-drv-nvidia-cuda -y
 flatpak install -y --noninteractive flathub com.github.wwmm.easyeffects io.mpv.Mpv org.libreoffice.LibreOffice org.mozilla.Thunderbird md.obsidian.Obsidian com.heroicgameslauncher.hgl org.prismlauncher.PrismLauncher com.mattjakeman.ExtensionManager com.github.tchx84.Flatseal org.keepassxc.KeePassXC com.rafaelmardojai.Blanket com.discordapp.Discord org.qbittorrent.qBittorrent org.gnome.Calendar org.gnome.Characters org.gnome.Cheese org.gnome.Loupe org.gnome.Maps org.gnome.font-viewer
 
 # Gnome Shell extensions
-# ArcMenu
 # Espresso
-# Clipboard Indicator
-# Dash to Panel
-# Desktop Icons NG (DING)
 # Firefox PiP Always on Top
-# Rounded Window Corners
-# Vitals
 # Status Area Horizontal Spacing
+# Tiling Assistant
