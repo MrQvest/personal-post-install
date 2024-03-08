@@ -65,7 +65,8 @@ sudo dnf install xorg-x11-drv-nvidia-cuda -y
 # Install personal flatpak collection
 flatpak install -y --noninteractive flathub org.mozilla.firefox
 flatpak install -y --noninteractive flathub com.github.wwmm.easyeffects 
-flatpak install -y --noninteractive flathub io.mpv.Mpv 
+flatpak install -y --noninteractive flathub io.mpv.Mpv
+flatpak install -y --noninteractive flathub org.gnome.World.PikaBackup
 flatpak install -y --noninteractive flathub org.libreoffice.LibreOffice 
 flatpak install -y --noninteractive flathub org.mozilla.Thunderbird 
 flatpak install -y --noninteractive flathub md.obsidian.Obsidian 
