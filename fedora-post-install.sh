@@ -46,14 +46,17 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 # Personal stuff
 
 # .heic extension support (for Apple photos), Utilities, Essetials
-sudo dnf install heif-pixbuf-loader libheif-tools restic neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-blur-my-shell gnome-shell-extension-dash-to-dock gnome-tweaks ffmpegthumbnailer google-noto-sans-runic-fonts neofetch htop strawberry torbrowser-launcher steam adw-gtk3-theme yt-dlp fish gh papirus-icon-theme gnome-shell-theme-yaru yaru-sound-theme -y
+sudo dnf install heif-pixbuf-loader libheif-tools restic neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-blur-my-shell gnome-shell-extension-dash-to-dock gnome-tweaks ffmpegthumbnailer google-noto-sans-runic-fonts neofetch htop strawberry steam adw-gtk3-theme yt-dlp fish gh papirus-icon-theme gnome-shell-theme-yaru yaru-sound-theme -y
 
 # Not needed apps
 sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections gnome-clocks gnome-contacts gnome-weather gnome-text-editor gnome-calculator gnome-tour gnome-system-monitor gnome-shell-extension-gamemode gnome-classic-session gnome-font-viewer gnome-characters loupe gnome-calendar cheese gnome-maps firefox -y
 sudo dnf group remove Libreoffice -y
 
 # dotfiles configuration
-git clone https://github.com/MrQvest/.dotfiles.git $HOME/.dotfiles
+git clone --bare https://github.com/MrQvest/.dotfiles.git $HOME/.dotfiles
+alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+dotfiles checkout -f
+dotfiles config --local status.showUntrackedFiles no
 
 # Install Starship Prompt
 curl -sS https://starship.rs/install.sh | sh
@@ -61,29 +64,6 @@ curl -sS https://starship.rs/install.sh | sh
 # NVIDIA Drivers
 sudo dnf install akmod-nvidia -y
 sudo dnf install xorg-x11-drv-nvidia-cuda -y
-
-# Install personal flatpak collection
-flatpak install -y --noninteractive flathub org.mozilla.firefox
-flatpak install -y --noninteractive flathub com.github.wwmm.easyeffects 
-flatpak install -y --noninteractive flathub io.mpv.Mpv
-flatpak install -y --noninteractive flathub org.gnome.World.PikaBackup
-flatpak install -y --noninteractive flathub org.libreoffice.LibreOffice 
-flatpak install -y --noninteractive flathub org.mozilla.Thunderbird 
-flatpak install -y --noninteractive flathub md.obsidian.Obsidian 
-flatpak install -y --noninteractive flathub com.heroicgameslauncher.hgl 
-flatpak install -y --noninteractive flathub org.prismlauncher.PrismLauncher 
-flatpak install -y --noninteractive flathub com.mattjakeman.ExtensionManager 
-flatpak install -y --noninteractive flathub com.github.tchx84.Flatseal 
-flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC 
-flatpak install -y --noninteractive flathub com.rafaelmardojai.Blanket 
-flatpak install -y --noninteractive flathub com.discordapp.Discord 
-flatpak install -y --noninteractive flathub org.qbittorrent.qBittorrent 
-flatpak install -y --noninteractive flathub org.gnome.Calendar 
-flatpak install -y --noninteractive flathub org.gnome.Characters 
-flatpak install -y --noninteractive flathub org.gnome.Cheese 
-flatpak install -y --noninteractive flathub org.gnome.Loupe 
-flatpak install -y --noninteractive flathub org.gnome.Maps 
-flatpak install -y --noninteractive flathub org.gnome.font-viewer
 
 # Gnome Shell extensions
 # Espresso
