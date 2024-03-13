@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install personal flatpak collection
-flatpak install -y --noninteractive --system flathub org.mozilla.firefox
+flatpak install -y --noninteractive --system flathub org.strawberrymusicplayer.strawberry
 flatpak install -y --noninteractive --system flathub com.github.wwmm.easyeffects 
 flatpak install -y --noninteractive --system flathub io.mpv.Mpv
 flatpak install -y --noninteractive --system flathub org.libreoffice.LibreOffice 
