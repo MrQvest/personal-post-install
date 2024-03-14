@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # dotfiles configuration
-git clone --bare https://github.com/MrQvest/.dotfiles.git $HOME/.dotfiles
+git clone --bare https://github.com/MrQvest/.dotfiles $HOME/.dotfiles
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 dotfiles checkout -f
 dotfiles config --local status.showUntrackedFiles no
