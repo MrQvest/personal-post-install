@@ -69,3 +69,4 @@ sudo dnf group remove Libreoffice -y
 # Firefox PiP Always on Top
 # Status Area Horizontal Spacing
 # Tiling Assistant
+# Open Bar
