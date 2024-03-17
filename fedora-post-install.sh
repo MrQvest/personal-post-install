@@ -10,7 +10,7 @@ dotfiles config --local status.showUntrackedFiles no
 curl -sS https://starship.rs/install.sh | sh
 
 # copr repos
-sudo dnf copr enable che/nerd-fonts
+#sudo dnf copr enable che/nerd-fonts
 
 # dnf configuration
 echo 'fastestmirror=True' | sudo tee -a /etc/dnf/dnf.conf
