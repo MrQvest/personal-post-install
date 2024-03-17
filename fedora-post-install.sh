@@ -58,7 +58,7 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 # Personal stuff
 
 # .heic extension support (for Apple photos), Utilities, Essetials, NVIDIA Drivers
-sudo dnf install heif-pixbuf-loader libheif-tools neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-blur-my-shell gnome-shell-extension-dash-to-dock gnome-tweaks ffmpegthumbnailer google-noto-sans-runic-fonts neofetch htop steam adw-gtk3-theme yt-dlp fish gh papirus-icon-theme gnome-shell-theme-yaru yaru-sound-theme solaar akmod-nvidia xorg-x11-drv-nvidia-cuda nerd-fonts -y
+sudo dnf install heif-pixbuf-loader libheif-tools neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-blur-my-shell gnome-shell-extension-dash-to-dock gnome-tweaks ffmpegthumbnailer google-noto-sans-runic-fonts fastfetch htop steam adw-gtk3-theme yt-dlp fish gh papirus-icon-theme gnome-shell-theme-yaru yaru-sound-theme solaar akmod-nvidia xorg-x11-drv-nvidia-cuda nerd-fonts mpv -y
 
 # Not needed apps
 sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections gnome-clocks gnome-contacts gnome-weather gnome-text-editor gnome-calculator gnome-tour gnome-system-monitor gnome-shell-extension-gamemode gnome-classic-session gnome-font-viewer gnome-characters loupe gnome-calendar cheese gnome-maps -y
