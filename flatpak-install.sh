@@ -1,21 +1,36 @@
 #!/bin/bash
 
 # Install personal flatpak collection
-flatpak install -y --noninteractive --system flathub com.github.wwmm.easyeffects
-flatpak install -y --noninteractive --system flathub org.libreoffice.LibreOffice 
-flatpak install -y --noninteractive --system flathub org.mozilla.Thunderbird 
-flatpak install -y --noninteractive --system flathub md.obsidian.Obsidian 
-flatpak install -y --noninteractive --system flathub com.heroicgameslauncher.hgl 
-flatpak install -y --noninteractive --system flathub org.prismlauncher.PrismLauncher 
-flatpak install -y --noninteractive --system flathub com.mattjakeman.ExtensionManager 
-flatpak install -y --noninteractive --system flathub com.github.tchx84.Flatseal 
-flatpak install -y --noninteractive --system flathub org.keepassxc.KeePassXC 
-flatpak install -y --noninteractive --system flathub com.rafaelmardojai.Blanket 
-flatpak install -y --noninteractive --system flathub dev.vencord.Vesktop
-flatpak install -y --noninteractive --system flathub org.qbittorrent.qBittorrent 
-flatpak install -y --noninteractive --system flathub org.gnome.Calendar 
-flatpak install -y --noninteractive --system flathub org.gnome.Characters 
-flatpak install -y --noninteractive --system flathub org.gnome.Cheese 
-flatpak install -y --noninteractive --system flathub org.gnome.Loupe 
-flatpak install -y --noninteractive --system flathub org.gnome.Maps 
-flatpak install -y --noninteractive --system flathub org.gnome.font-viewer
+
+# EasyEffects
+flatpak install -y --noninteractive flathub com.github.wwmm.easyeffects
+# LibreOffice
+flatpak install -y --noninteractive flathub org.libreoffice.LibreOffice 
+# Thunderbird
+flatpak install -y --noninteractive flathub org.mozilla.Thunderbird 
+# Obsidian
+flatpak install -y --noninteractive flathub md.obsidian.Obsidian 
+# Heroic Games Launcher
+flatpak install -y --noninteractive flathub com.heroicgameslauncher.hgl 
+# Prism Launcher
+flatpak install -y --noninteractive flathub org.prismlauncher.PrismLauncher 
+# Extension Manager
+flatpak install -y --noninteractive flathub com.mattjakeman.ExtensionManager 
+# Flatseal
+flatpak install -y --noninteractive flathub com.github.tchx84.Flatseal 
+# KeePassXC
+flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC 
+# Blanket
+flatpak install -y --noninteractive flathub com.rafaelmardojai.Blanket 
+# Vesktop (Discord)
+flatpak install -y --noninteractive flathub dev.vencord.Vesktop
+# qBittorrent
+flatpak install -y --noninteractive flathub org.qbittorrent.qBittorrent 
+
+# GNOME Apps
+flatpak install -y --noninteractive flathub org.gnome.Calendar 
+flatpak install -y --noninteractive flathub org.gnome.Characters 
+flatpak install -y --noninteractive flathub org.gnome.Cheese 
+flatpak install -y --noninteractive flathub org.gnome.Loupe 
+flatpak install -y --noninteractive flathub org.gnome.Maps 
+flatpak install -y --noninteractive flathub org.gnome.font-viewer
