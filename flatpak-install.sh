@@ -9,7 +9,7 @@ flatpak install -y --noninteractive flathub org.libreoffice.LibreOffice
 # Thunderbird
 flatpak install -y --noninteractive flathub org.mozilla.Thunderbird 
 # Obsidian
-flatpak install -y --noninteractive flathub md.obsidian.Obsidian 
+#flatpak install -y --noninteractive flathub md.obsidian.Obsidian 
 # Heroic Games Launcher
 flatpak install -y --noninteractive flathub com.heroicgameslauncher.hgl 
 # Prism Launcher
