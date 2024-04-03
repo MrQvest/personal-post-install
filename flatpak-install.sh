@@ -9,7 +9,7 @@ flatpak install -y --noninteractive flathub org.libreoffice.LibreOffice
 # Thunderbird
 flatpak install -y --noninteractive flathub org.mozilla.Thunderbird 
 # Obsidian
-#flatpak install -y --noninteractive flathub md.obsidian.Obsidian 
+flatpak install -y --noninteractive flathub md.obsidian.Obsidian 
 # Heroic Games Launcher
 flatpak install -y --noninteractive flathub com.heroicgameslauncher.hgl 
 # Prism Launcher
@@ -22,10 +22,16 @@ flatpak install -y --noninteractive flathub com.github.tchx84.Flatseal
 flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC 
 # Blanket
 flatpak install -y --noninteractive flathub com.rafaelmardojai.Blanket 
+# mpv
+flatpak install -y --noninteractive flathub io.mpv.Mpv
 # Vesktop (Discord)
 flatpak install -y --noninteractive flathub dev.vencord.Vesktop
 # qBittorrent
 flatpak install -y --noninteractive flathub org.qbittorrent.qBittorrent 
+# Tor Browser
+flatpak install -y --noninteractive flathub org.torproject.torbrowser-launcher 
+# ProtonPlus
+flatpak install -y --noninteractive flathub com.vysp3r.ProtonPlus
 
 # GNOME Apps
 flatpak install -y --noninteractive flathub org.gnome.Calendar 
