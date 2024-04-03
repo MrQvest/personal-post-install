@@ -2,9 +2,9 @@
 
 # dotfiles configuration
 git clone --bare https://github.com/MrQvest/.dotfiles $HOME/.dotfiles
-alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
-dotfiles checkout -f
-dotfiles config --local status.showUntrackedFiles no
+#alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+#dotfiles checkout -f
+#dotfiles config --local status.showUntrackedFiles no
 
 # Install Starship Prompt
 curl -sS https://starship.rs/install.sh | sh
