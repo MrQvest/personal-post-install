@@ -9,6 +9,9 @@ git clone --bare https://github.com/MrQvest/.dotfiles $HOME/.dotfiles
 # Install Starship Prompt
 curl -sS https://starship.rs/install.sh | sh
 
+# Install Homebrew (unattended)
+NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 # copr repos
 #sudo dnf copr enable che/nerd-fonts
 
