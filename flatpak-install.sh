@@ -24,6 +24,8 @@ flatpak install -y --noninteractive flathub org.keepassxc.KeePassXC
 flatpak install -y --noninteractive flathub com.rafaelmardojai.Blanket 
 # mpv
 flatpak install -y --noninteractive flathub io.mpv.Mpv
+# nomacs
+flatpak install -y --noninteractive flathub org.nomacs.ImageLounge
 # Vesktop (Discord)
 flatpak install -y --noninteractive flathub dev.vencord.Vesktop
 # qBittorrent
@@ -37,6 +39,5 @@ flatpak install -y --noninteractive flathub com.vysp3r.ProtonPlus
 flatpak install -y --noninteractive flathub org.gnome.Calendar 
 flatpak install -y --noninteractive flathub org.gnome.Characters 
 flatpak install -y --noninteractive flathub org.gnome.Cheese 
-flatpak install -y --noninteractive flathub org.gnome.Loupe 
 flatpak install -y --noninteractive flathub org.gnome.Maps 
 flatpak install -y --noninteractive flathub org.gnome.font-viewer
