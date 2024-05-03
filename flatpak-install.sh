@@ -14,6 +14,10 @@ flatpak install -y --noninteractive flathub md.obsidian.Obsidian
 flatpak install -y --noninteractive flathub com.heroicgameslauncher.hgl 
 # Prism Launcher
 flatpak install -y --noninteractive flathub org.prismlauncher.PrismLauncher 
+# Mindustry
+flatpak install -y --noninteractive flathub com.github.Anuken.Mindustry
+# Osu!
+flatpak install -y --noninteractive flathub sh.ppy.osu
 # Extension Manager
 flatpak install -y --noninteractive flathub com.mattjakeman.ExtensionManager 
 # Flatseal

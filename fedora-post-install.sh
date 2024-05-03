@@ -20,16 +20,17 @@ echo 'fastestmirror=True' | sudo tee -a /etc/dnf/dnf.conf
 echo 'max_parallel_downloads=10' | sudo tee -a /etc/dnf/dnf.conf
 
 # GDM configuration
-sudo touch /etc/dconf/db/gdm.d/06-tap-to-click
+# Not needed as of Fedora 40
+#sudo touch /etc/dconf/db/gdm.d/06-tap-to-click
 #sudo touch /etc/dconf/db/gdm.d/11-icon-settings
 
-echo '[org/gnome/desktop/peripherals/touchpad]' | sudo tee -a /etc/dconf/db/gdm.d/06-tap-to-click
-echo 'tap-to-click=true' | sudo tee -a /etc/dconf/db/gdm.d/06-tap-to-click
+#echo '[org/gnome/desktop/peripherals/touchpad]' | sudo tee -a /etc/dconf/db/gdm.d/06-tap-to-click
+#echo 'tap-to-click=true' | sudo tee -a /etc/dconf/db/gdm.d/06-tap-to-click
 
 #echo '[org/gnome/desktop/interface]' | sudo tee -a /etc/dconf/db/gdm.d/11-icon-settings
 #echo 'icon-theme="Papirus-Dark"' | sudo tee -a /etc/dconf/db/gdm.d/11-icon-settings
 
-sudo dconf update
+#sudo dconf update
 
 ##################################################################
 # RPMFusion stuff
