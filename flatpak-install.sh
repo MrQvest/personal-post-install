@@ -38,6 +38,8 @@ flatpak install -y --noninteractive flathub org.qbittorrent.qBittorrent
 flatpak install -y --noninteractive flathub org.torproject.torbrowser-launcher 
 # ProtonPlus
 flatpak install -y --noninteractive flathub com.vysp3r.ProtonPlus
+# Bottles
+flatpak install -y --noninteractive flathub com.usebottles.bottles
 
 # GNOME Apps
 flatpak install -y --noninteractive flathub org.gnome.Calendar 
