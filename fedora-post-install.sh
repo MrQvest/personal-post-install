@@ -66,7 +66,7 @@ sudo dnf install heif-pixbuf-loader libheif-tools neovim util-linux-user gnome-s
 
 # Not needed apps
 sudo dnf group remove Libreoffice -y
-sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections gnome-clocks gnome-contacts gnome-weather gnome-text-editor gnome-calculator gnome-tour gnome-system-monitor gnome-classic-session gnome-font-viewer gnome-characters loupe gnome-calendar cheese gnome-maps gnome-boxes gnome-shell-extension-background-logo -y
+sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections gnome-clocks gnome-contacts gnome-weather gnome-text-editor gnome-calculator gnome-tour gnome-system-monitor gnome-classic-session gnome-font-viewer gnome-characters loupe gnome-calendar gnome-maps gnome-boxes snapshot gnome-shell-extension-background-logo -y
 
 # Gnome Shell extensions
 # PiP on top
