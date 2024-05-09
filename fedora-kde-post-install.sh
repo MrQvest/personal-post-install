@@ -19,19 +19,6 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 echo 'fastestmirror=True' | sudo tee -a /etc/dnf/dnf.conf
 echo 'max_parallel_downloads=10' | sudo tee -a /etc/dnf/dnf.conf
 
-# GDM configuration
-# Not needed as of Fedora 40
-#sudo touch /etc/dconf/db/gdm.d/06-tap-to-click
-#sudo touch /etc/dconf/db/gdm.d/11-icon-settings
-
-#echo '[org/gnome/desktop/peripherals/touchpad]' | sudo tee -a /etc/dconf/db/gdm.d/06-tap-to-click
-#echo 'tap-to-click=true' | sudo tee -a /etc/dconf/db/gdm.d/06-tap-to-click
-
-#echo '[org/gnome/desktop/interface]' | sudo tee -a /etc/dconf/db/gdm.d/11-icon-settings
-#echo 'icon-theme="Papirus-Dark"' | sudo tee -a /etc/dconf/db/gdm.d/11-icon-settings
-
-#sudo dconf update
-
 ##################################################################
 # RPMFusion stuff
 # Install RPM Fusion repositories
@@ -62,16 +49,8 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 # Personal stuff
 
 # .heic extension support (for Apple photos), Utilities, Essetials, NVIDIA Drivers
-sudo dnf install heif-pixbuf-loader libheif-tools neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-blur-my-shell gnome-shell-extension-dash-to-dock gnome-shell-extension-caffeine gnome-tweaks ffmpegthumbnailer google-noto-sans-runic-fonts fastfetch btop steam adw-gtk3-theme yt-dlp fish gh papirus-icon-theme yaru-theme solaar akmod-nvidia strawberry handbrake-gui -y
+sudo dnf install heif-pixbuf-loader libheif-tools neovim google-noto-sans-runic-fonts fastfetch btop steam yt-dlp fish gh papirus-icon-theme solaar akmod-nvidia strawberry handbrake-gui nomacs thunderbird -y
 
 # Not needed apps
 sudo dnf group remove Libreoffice -y
-sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections gnome-clocks gnome-contacts gnome-weather gnome-text-editor gnome-calculator gnome-tour gnome-system-monitor gnome-classic-session gnome-font-viewer gnome-characters loupe gnome-calendar gnome-maps gnome-boxes snapshot gnome-shell-extension-background-logo -y
-
-# Gnome Shell extensions
-# PiP on top
-# Status Area Horizontal Spacing
-# Tiling Assistant
-# Open Bar
-# Coverflow Alt-Tab
-# Clipboard Indicator
+sudo dnf remove kwrite kontact kmail dragonplayer elisa-player firewall-config kamoso kmahjongg kmines kmousetool kmouth kolourpaint kpat krdc krfb ktnef akregator libreoffice-core neochat skanpage korganizer kaddressbook kfind kcharselect kgpg -y
