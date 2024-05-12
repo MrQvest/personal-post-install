@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Install personal flatpak collection
+# Enable flathub and install personal flatpak collection
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # EasyEffects
 flatpak install -y --noninteractive flathub com.github.wwmm.easyeffects
@@ -26,3 +27,9 @@ flatpak install -y --noninteractive flathub dev.vencord.Vesktop
 flatpak install -y --noninteractive flathub org.qbittorrent.qBittorrent 
 # Tor Browser
 flatpak install -y --noninteractive flathub org.torproject.torbrowser-launcher 
+# ProtonUp-Qt
+flatpak install -y --noninteractive flathub net.davidotek.pupgui2
+# GIMP
+flatpak install -y --noninteractive flathub org.gimp.GIMP
+# Kdenlive
+flatpak install -y --noninteractive flathub org.kde.kdenlive
