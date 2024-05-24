@@ -53,4 +53,6 @@ sudo dnf group remove Libreoffice -y
 sudo dnf remove kwrite kontact kmail dragonplayer elisa-player firewall-config kamoso kmahjongg kmines kmousetool kmouth kolourpaint kpat krdc krfb ktnef akregator libreoffice-core neochat skanpage korganizer kaddressbook kfind kcharselect kgpg virtualbox-guest-additions -y
 
 # .heic extension support (for Apple photos), Utilities, Essetials, NVIDIA Drivers
-sudo dnf install heif-pixbuf-loader libheif-tools neovim google-noto-sans-runic-fonts fastfetch btop steam yt-dlp fish gh solaar akmod-nvidia strawberry handbrake-gui mozilla-openh264 git-core -y
+sudo dnf install heif-pixbuf-loader libheif-tools neovim google-noto-sans-runic-fonts fastfetch btop steam fish solaar akmod-nvidia strawberry handbrake-gui mozilla-openh264 git-core -y
+# Install cli tools with Homebrew
+brew install yt-dlp gh gallery-dl topgrade
