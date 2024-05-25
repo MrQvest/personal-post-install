@@ -38,11 +38,3 @@ flatpak install -y --noninteractive flathub org.torproject.torbrowser-launcher
 flatpak install -y --noninteractive flathub com.vysp3r.ProtonPlus
 # Bottles
 flatpak install -y --noninteractive flathub com.usebottles.bottles
-
-# GNOME Apps
-flatpak install -y --noninteractive flathub org.gnome.Calendar 
-flatpak install -y --noninteractive flathub org.gnome.Characters 
-flatpak install -y --noninteractive flathub org.gnome.Snapshot
-flatpak install -y --noninteractive flathub org.gnome.Maps 
-flatpak install -y --noninteractive flathub org.gnome.font-viewer
-flatpak install -y --noninteractive flathub org.gnome.Loupe
