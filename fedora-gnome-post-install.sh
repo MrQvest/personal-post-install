@@ -62,11 +62,14 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 # Personal stuff
 
 # .heic extension support (for Apple photos), Utilities, Essetials, NVIDIA Drivers
-sudo dnf install heif-pixbuf-loader libheif-tools neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-blur-my-shell gnome-shell-extension-dash-to-dock gnome-shell-extension-caffeine gnome-tweaks ffmpegthumbnailer google-noto-sans-runic-fonts fastfetch btop steam adw-gtk3-theme yt-dlp fish gh papirus-icon-theme yaru-theme solaar akmod-nvidia strawberry handbrake-gui nomacs -y
+sudo dnf install heif-pixbuf-loader libheif-tools neovim util-linux-user gnome-shell-extension-appindicator gnome-shell-extension-just-perfection gnome-shell-extension-gsconnect gnome-shell-extension-user-theme gnome-shell-extension-blur-my-shell gnome-shell-extension-dash-to-dock gnome-shell-extension-caffeine gnome-tweaks ffmpegthumbnailer google-noto-sans-runic-fonts fastfetch btop steam adw-gtk3-theme fish solaar akmod-nvidia strawberry handbrake-gui -y
+
+# Install cli tools with Homebrew
+/home/linuxbrew/.linuxbrew/bin/brew install yt-dlp gh gallery-dl topgrade
 
 # Not needed apps
 sudo dnf group remove Libreoffice -y
-sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections gnome-clocks gnome-contacts gnome-weather gnome-text-editor gnome-calculator gnome-tour gnome-system-monitor gnome-classic-session gnome-font-viewer gnome-characters loupe gnome-calendar gnome-maps gnome-boxes snapshot gnome-shell-extension-background-logo -y
+sudo dnf remove libreoffice-core rhythmbox totem gnome-extensions-app simple-scan mediawriter gnome-connections gnome-clocks gnome-contacts gnome-weather gnome-text-editor gnome-calculator gnome-tour gnome-system-monitor gnome-classic-session gnome-boxes gnome-shell-extension-background-logo -y
 
 # Gnome Shell extensions
 # PiP on top
