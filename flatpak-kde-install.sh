@@ -33,3 +33,5 @@ flatpak install -y --noninteractive flathub net.davidotek.pupgui2
 flatpak install -y --noninteractive flathub org.gimp.GIMP
 # Kdenlive
 flatpak install -y --noninteractive flathub org.kde.kdenlive
+# Inkscape
+flatpak install -y --noninteractive flathub org.inkscape.Inkscape
