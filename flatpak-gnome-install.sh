@@ -38,3 +38,9 @@ flatpak install -y --noninteractive flathub org.torproject.torbrowser-launcher
 flatpak install -y --noninteractive flathub com.vysp3r.ProtonPlus
 # Bottles
 flatpak install -y --noninteractive flathub com.usebottles.bottles
+# GIMP
+flatpak install -y --noninteractive flathub org.gimp.GIMP
+# Kdenlive
+flatpak install -y --noninteractive flathub org.kde.kdenlive
+# Inkscape
+flatpak install -y --noninteractive flathub org.inkscape.Inkscape
