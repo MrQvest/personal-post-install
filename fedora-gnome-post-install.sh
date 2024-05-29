@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Improve system responsiveness (Audio crackling is gone with this)
+sudo grubby --args="preempt=full" --update-kernel=ALL
+
 # dotfiles configuration
 git clone --bare https://github.com/MrQvest/.dotfiles $HOME/.dotfiles
 #alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
