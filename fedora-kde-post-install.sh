@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Improve system responsiveness (Audio crackling is gone with this)
-sudo grubby --args="preempt=full" --update-kernel=ALL
+#sudo grubby --args="preempt=full" --update-kernel=ALL
 
 # dotfiles configuration
 git clone --bare https://github.com/MrQvest/.dotfiles $HOME/.dotfiles
@@ -9,14 +9,11 @@ git clone --bare https://github.com/MrQvest/.dotfiles $HOME/.dotfiles
 #dotfiles checkout -f
 #dotfiles config --local status.showUntrackedFiles no
 
-# Install Starship Prompt
-curl -sS https://starship.rs/install.sh | sh
-
 # Install Homebrew (unattended)
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # copr repos
-#sudo dnf copr enable che/nerd-fonts
+sudo dnf copr enable che/nerd-fonts
 
 # dnf configuration
 echo 'fastestmirror=True' | sudo tee -a /etc/dnf/dnf.conf
@@ -56,6 +53,6 @@ sudo dnf group remove Libreoffice -y
 sudo dnf remove mediawriter kwrite kontact kmail dragonplayer elisa-player firewall-config kamoso kmahjongg kmines kmousetool kmouth kolourpaint kpat krdc krfb ktnef akregator libreoffice-core neochat skanpage korganizer kaddressbook kfind kcharselect kgpg virtualbox-guest-additions -y
 
 # .heic extension support (for Apple photos), Utilities, Essetials, NVIDIA Drivers
-sudo dnf install heif-pixbuf-loader libheif-tools neovim google-noto-sans-runic-fonts fastfetch btop steam fish solaar akmod-nvidia strawberry handbrake-gui mozilla-openh264 git-core -y
+sudo dnf install heif-pixbuf-loader libheif-tools neovim google-noto-sans-runic-fonts fastfetch steam fish akmod-nvidia git-core yt-dlp -y
 # Install cli tools with Homebrew
-/home/linuxbrew/.linuxbrew/bin/brew install yt-dlp gh gallery-dl topgrade
+/home/linuxbrew/.linuxbrew/bin/brew install gallery-dl topgrade starship
