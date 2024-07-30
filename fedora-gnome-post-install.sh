@@ -62,7 +62,7 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 # Personal stuff
 
 # .heic extension support (for Apple photos), Utilities, Essetials, NVIDIA Drivers
-sudo dnf install heif-pixbuf-loader libheif-tools neovim util-linux-user gnome-tweaks ffmpegthumbnailer google-noto-sans-runic-fonts fastfetch nvtop steam adw-gtk3-theme fish akmod-nvidia yt-dlp nerd-fonts -y
+sudo dnf install heif-pixbuf-loader libheif-tools neovim util-linux-user gnome-tweaks ffmpegthumbnailer google-noto-sans-runic-fonts fastfetch steam adw-gtk3-theme fish akmod-nvidia yt-dlp nerd-fonts audacious -y
 
 # Install cli tools with Homebrew
 /home/linuxbrew/.linuxbrew/bin/brew install gallery-dl topgrade starship
