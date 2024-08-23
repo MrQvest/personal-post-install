@@ -22,10 +22,9 @@ echo 'max_parallel_downloads=10' | sudo tee -a /etc/dnf/dnf.conf
 # Personal stuff
 
 # Not needed apps
-sudo dnf group remove Libreoffice -y
-sudo dnf remove mediawriter kwrite kontact kmail okular dragonplayer elisa-player firewall-config kamoso kmahjongg kmines kmousetool kmouth kolourpaint kpat krdc krfb ktnef akregator libreoffice-core neochat skanpage korganizer kaddressbook kfind kcharselect kgpg virtualbox-guest-additions kwalletmanager5 -y
+sudo dnf remove mediawriter kwrite kontact kmail okular dragonplayer elisa-player firewall-config kamoso kmahjongg kmines kmousetool kmouth kolourpaint kpat krdc krfb ktnef akregator neochat skanpage korganizer kaddressbook kfind kcharselect kgpg virtualbox-guest-additions kwalletmanager5 -y
 
 # .heic extension support (for Apple photos), Utilities, Essetials, NVIDIA Drivers
-sudo dnf install heif-pixbuf-loader libheif-tools neovim google-noto-sans-runic-fonts fastfetch steam fish akmod-nvidia git-core yt-dlp audacious -y
+sudo dnf install heif-pixbuf-loader libheif-tools neovim google-noto-sans-runic-fonts fastfetch steam fish akmod-nvidia git-core yt-dlp audacious nerd-fonts -y
 # Install cli tools with Homebrew
 /home/linuxbrew/.linuxbrew/bin/brew install gallery-dl topgrade starship
