@@ -5,8 +5,6 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 # EasyEffects
 flatpak install -y --noninteractive flathub com.github.wwmm.easyeffects
-# LibreOffice
-flatpak install -y --noninteractive flathub org.libreoffice.LibreOffice 
 # Obsidian
 flatpak install -y --noninteractive flathub md.obsidian.Obsidian 
 # Heroic Games Launcher
@@ -25,8 +23,6 @@ flatpak install -y --noninteractive flathub io.mpv.Mpv
 flatpak install -y --noninteractive flathub dev.vencord.Vesktop
 # qBittorrent
 flatpak install -y --noninteractive flathub org.qbittorrent.qBittorrent 
-# Tor Browser
-flatpak install -y --noninteractive flathub org.torproject.torbrowser-launcher 
 # ProtonUp-Qt
 flatpak install -y --noninteractive flathub net.davidotek.pupgui2
 # GIMP
@@ -35,3 +31,7 @@ flatpak install -y --noninteractive flathub org.gimp.GIMP
 flatpak install -y --noninteractive flathub org.kde.kdenlive
 # Inkscape
 flatpak install -y --noninteractive flathub org.inkscape.Inkscape
+# LocalSend
+flatpak install -y --noninteractive flathub org.localsend.localsend_app
+# OBS Studio
+flatpak install -y --noninteractive flathub com.obsproject.Studio
