@@ -4,8 +4,6 @@
 
 # EasyEffects
 flatpak install -y --noninteractive flathub com.github.wwmm.easyeffects
-# LibreOffice
-flatpak install -y --noninteractive flathub org.libreoffice.LibreOffice 
 # Thunderbird
 flatpak install -y --noninteractive flathub org.mozilla.Thunderbird 
 # Obsidian
@@ -30,10 +28,6 @@ flatpak install -y --noninteractive flathub com.rafaelmardojai.Blanket
 flatpak install -y --noninteractive flathub io.mpv.Mpv
 # Vesktop (Discord)
 flatpak install -y --noninteractive flathub dev.vencord.Vesktop
-# qBittorrent
-flatpak install -y --noninteractive flathub org.qbittorrent.qBittorrent 
-# Tor Browser
-flatpak install -y --noninteractive flathub org.torproject.torbrowser-launcher 
 # ProtonPlus
 flatpak install -y --noninteractive flathub com.vysp3r.ProtonPlus
 # Bottles
@@ -44,3 +38,9 @@ flatpak install -y --noninteractive flathub org.gimp.GIMP
 flatpak install -y --noninteractive flathub org.kde.kdenlive
 # Inkscape
 flatpak install -y --noninteractive flathub org.inkscape.Inkscape
+# LocalSend
+flatpak install -y --noninteractive flathub org.localsend.localsend_app
+# OBS Studio
+flatpak install -y --noninteractive flathub com.obsproject.Studio
+# Audacious
+flatpak install -y --noninteractive fedora org.atheme.audacious

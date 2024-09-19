@@ -49,6 +49,6 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware" -y
 sudo dnf remove mediawriter kontact kmail okular dragonplayer elisa-player firewall-config kamoso kmahjongg kmines kmousetool kmouth kolourpaint kpat krdc krfb ktnef akregator neochat skanpage korganizer kaddressbook kfind kcharselect kgpg virtualbox-guest-additions kwalletmanager5 -y
 
 # .heic extension support (for Apple photos), Utilities, Essetials, NVIDIA Drivers
-sudo dnf install heif-pixbuf-loader libheif-tools neovim google-noto-sans-runic-fonts fira-code-fonts fastfetch steam fish akmod-nvidia git-core yt-dlp audacious nerd-fonts -y
+sudo dnf install heif-pixbuf-loader libheif-tools neovim google-noto-sans-runic-fonts fira-code-fonts fastfetch steam fish akmod-nvidia git-core yt-dlp nerd-fonts -y
 # Install cli tools with Homebrew
 /home/linuxbrew/.linuxbrew/bin/brew install gallery-dl topgrade

@@ -35,3 +35,5 @@ flatpak install -y --noninteractive flathub org.inkscape.Inkscape
 flatpak install -y --noninteractive flathub org.localsend.localsend_app
 # OBS Studio
 flatpak install -y --noninteractive flathub com.obsproject.Studio
+# Audacious
+flatpak install -y --noninteractive fedora org.atheme.audacious
